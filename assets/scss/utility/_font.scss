@@ -1,0 +1,43 @@
+// poppins font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// Dm sans font
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+// schoolbell font
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+
+.schoolbell{
+    font-family: "Schoolbell", cursive;
+}
+.pop{
+    font-family: "Poppins", sans-serif;
+}
+.dm{
+    font-family: "DM Sans", sans-serif;
+}
+
+// font size //
+$h1-font-size: 90px;
+$h2-font-size: 42px;
+$h3-font-size: 30px;
+$h4-font-size: 24px;
+$h5-font-size: 20px;
+$h6-font-size: 18px;
+// font weight //
+$h1-font-weight: 800;
+$h2-font-weight: 800;
+$h3-font-weight: 800;
+$h4-font-weight: 800;
+$h5-font-weight: 700;
+$h6-font-weight: 700;
+
+
+h2 {
+    font-size: 2.813rem;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.sub-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
