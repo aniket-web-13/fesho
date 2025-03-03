@@ -1,0 +1,47 @@
+.main-btn {
+  padding: 0.983rem 1.875rem;
+  border-radius: 0.625rem;
+  border: none;
+  background-color: $yellow;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  color: $main-btn-hover;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $main-btn-hover;
+    color: $yellow;
+  }
+}
+
+.arr-btn {
+  padding: 0.625rem;
+  background-color: $white;
+  border: none;
+  font-size: 30px;
+  transition: all 0.5s ease-in;
+  &:hover {
+    font-size: 37px;
+  }
+}
+
+.ab-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.ab-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.head-main-count {
+  @include flex(row, center, space-between);
+  gap: 1rem;
+}
+.head-left{
+  @include flex(column,flex-start,space-between);
+}
+.head-span{}

@@ -1,0 +1,119 @@
+// use for nav top //
+.nav-green {
+  background-color: $greenBG;
+}
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nt-left {
+  padding: 0.5rem;
+}
+.nt-left ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.nt-left ul li {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  a {
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    gap: 0.5rem;
+  }
+  address {
+    color: $white;
+    display: flex;
+    gap: 0.5rem;
+    font-style: normal;
+  }
+}
+// icon yellow color //
+.icon {
+  color: $warning;
+}
+
+// top nav right //
+.nt-right ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nt-right ul li {
+  a {
+    color: $white;
+  }
+}
+// main Nav bar //
+.nav-main {
+  @include flex(row, center, space-between);
+}
+
+.nav-link-right {
+  @include flex(row, center, space-between);
+  gap: 10rem;
+}
+.navigation-link ul {
+  @include flex(row, center, space-between);
+  list-style: none;
+  gap: 3rem;
+  li {
+    text-transform: capitalize;
+    padding: 2.625rem 0;
+    a {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+}
+
+.down-arr {
+  font-size: 0.75rem;
+  padding: 0 0.25rem;
+}
+.nav-func ul {
+  @include flex(row, center, space-between);
+  list-style: none;
+  gap: 2rem;
+  li {
+    text-transform: capitalize;
+    a {
+      text-decoration: none;
+      color: $dark;
+    }
+  }
+}
+// nested nav link //
+// .nav-m{
+//   a {
+//     text-decoration: none;
+//     color: $dark;
+//   }
+// }
+.nav-nes-parent {
+  position: relative;
+}
+.nav-nes-link {
+  display: none;
+  border: 1px solid $gray;
+  position: absolute;
+  top: 105px;
+  ul {
+    @include flex(column, flex-start, space-between);
+    padding: 0 0.75rem;
+    gap: 0;
+    li {
+      width: 100%;
+      padding: 0.75rem 1.875rem;
+      border-bottom: 1px solid $gray;
+      a {
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+}
