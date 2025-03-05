@@ -1,16 +1,18 @@
 .bg-head-color {
-   background-color: $bg-color;
+  background-color: $bg-color;
 }
 .bg-img-top {
   background-image: url("/assets/media/png/pattern-sec-top-bg.png");
   background-repeat: no-repeat;
   height: 100px;
   background-size: cover;
+  position: relative;
+  top: 2px;
 }
 .bg-img-main {
   background-image: url("/assets/media/jpg/header-bg.jpg");
   background-repeat: no-repeat;
-  height: 100px;
+  // height: 730px;
   background-size: cover;
 }
 .bg-img-btm {
@@ -18,4 +20,75 @@
   background-repeat: no-repeat;
   height: 100px;
   background-size: cover;
+}
+.ab-left {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 65%;
+  left: 0;
+}
+.ab-right {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 65%;
+  right: 0;
+}
+.hin-btn {
+  @include flex(row, center, space-between);
+  gap: 15rem;
+}
+.head {
+  @include flex(row, center, space-between);
+}
+.head-main-count {
+  @include flex(row, center, space-between);
+  gap: 1rem;
+}
+.head-left {
+  @include flex(column, flex-start, space-between);
+  gap: 1rem;
+  width: 750px;
+}
+// .head-span{}
+.head-right {
+  width: 583px;
+  margin-right: 1.125rem;
+}
+// use for header right img position //
+.header-img-1 {
+  z-index: 99;
+  width: 659px;
+  position: relative;
+  white-space: nowrap;
+}
+.head-circles {
+  position: absolute;
+  z-index: 1;
+  top: 111px;
+  right: -90px;
+}
+.head-latas {
+  position: absolute;
+  z-index: 1;
+  bottom: 97px;
+  right: -145px;
+}
+.head-100 {
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  left: 70px;
+}
+.head-tomato {
+  position: absolute;
+  bottom: 67px;
+  left: 105px;
+  z-index: 1;
+}
+.lb-img {
+  position: absolute;
+  left: -815px;
+  top: 45px;
 }

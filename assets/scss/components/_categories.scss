@@ -1,0 +1,66 @@
+.cat-bg-left {
+  background-image: url("/assets/media/png/pattern-left-sec-bg.webp");
+  position: absolute;
+  top: -140px;
+  width: 100%;
+  height: 631px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: left top;
+  z-index: -1;
+}
+.cat-gb-p {
+}
+.cat-bg-right {
+  position: absolute;
+  right: 0px;
+  top: -397px;
+  height: 893px;
+  width: 575px;
+  content: "";
+  background-image: url("/assets/media/png/shape-right-sec-bg.webp");
+  background-repeat: no-repeat;
+}
+.sec-flex-col div {
+  text-align: center;
+}
+.cat-cards-count {
+  @include flex(row, center, center);
+  gap: 0.5rem;
+}
+.cat-card {
+  padding: 2.5rem 1.875rem 1.875rem;
+  width: 275px;
+  border: 1px solid black;
+  @include flex(column, center, center);
+
+  overflow: hidden;
+}
+.cat-bg {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 555px;
+  position: absolute;
+  top: -346px;
+  left: 30px;
+}
+.cir-img {
+  z-index: 1;
+  position: relative;
+  img {
+    border-radius: 50%;
+  }
+}
+.cat-card-info {
+  a {
+    font-size: 25px;
+    color: $greenBG;
+  }
+}
+.category-block  {
+ 
+    font-size: 14px;
+    color: #797f7d;
+    line-height: 29px;
+
+}

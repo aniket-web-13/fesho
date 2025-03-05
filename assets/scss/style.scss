@@ -1,8 +1,12 @@
-@import "./components/mixin";
-@import "./utility/font";
-@import "./utility/color";
-@import "./utility/partiel/common";
 @import "./utility/partiel/reset";
+@import "./utility/partiel/common";
+@import "./utility/color";
+@import "./utility/font";
+@import "./components/mixin";
 @import "./components/btn";
 @import "./components/nav";
 @import "./components/header";
+@import "./components/cardsSectionOne";
+@import "./components/welcomeSec";
+@import "./components/categories";
+

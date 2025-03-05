@@ -3,14 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .container{
     width: 1200px;
     margin: 0 auto;
 }
 .container-fluid{
     width: 100%;
+    padding: 2.625rem 0;
 }
 
 .relative{
     position: relative;
 }
+

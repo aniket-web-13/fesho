@@ -3,8 +3,8 @@ function click() {
 
 }
 
-let navNesParent = document.getElementsByClassName("nav-nes-parent");console.log(navNesParent);
-let navNesChild = document.getElementsByClassName("nav-nes-link");console.log(navNesChild);
+let navNesParent = document.getElementsByClassName("nav-nes-parent");
+let navNesChild = document.getElementsByClassName("nav-nes-link");
 
 navNesParent[0].addEventListener("mouseover", ()=>{
    navNesChild[0].style.display= "block"
@@ -12,3 +12,4 @@ navNesParent[0].addEventListener("mouseover", ()=>{
 navNesParent[0].addEventListener("mouseleave", ()=>{
    navNesChild[0].style.display= "none"
 })
+

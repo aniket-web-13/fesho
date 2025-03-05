@@ -1,6 +1,22 @@
-@mixin flex($align,$vert,$hor){
-    display: flex;
-    flex-direction: $align;
-    align-items: $vert;
-    justify-content: $hor;
+@mixin flex($align, $vert, $hor) {
+  display: flex;
+  flex-direction: $align;
+  align-items: $vert;
+  justify-content: $hor;
+}
+
+@mixin mainBtnC($mbgColor, $mColor, $hbgColor, $hcolor) {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  padding: 0.983rem 1.875rem;
+  border-radius: 0.625rem;
+  border: none;
+  background-color: $mbgColor;
+  color: $mColor;
+  &:hover {
+    background-color: $hbgColor;
+    color: $hcolor;
+  }
 }

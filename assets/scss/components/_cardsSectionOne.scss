@@ -1,0 +1,38 @@
+.sec-flex{
+    @include flex(row,center,center);
+    gap: 1rem;
+    padding: 3.5rem 0;
+}
+.sec-flex-col{
+    @include flex(column,center,center);
+    gap: 1rem;
+}
+.card-info{
+    @include flex(column,flex-start,space-between);
+    gap: 0.5rem;
+    width: 60%;
+}
+.card-count{
+    @include flex(row,center,space-between);
+    width: 610px;
+    padding: 2.5rem 3.125rem 3.125rem;
+    background-color: $yellow;
+    overflow: hidden;
+    border-radius: 0.625rem;
+}
+.sch-h3{
+    font-family: "Schoolbell", cursive;
+    font-size: 40px;
+    color: $main-btn-hover;   
+}
+.pt{
+    font-size: $h6-font-size;
+    font-weight: $h6-font-weight;
+    color: $main-btn-hover;
+    text-transform: capitalize;
+}
+.card-img{
+    position: absolute;
+    top: 0;
+    right: -133px;
+}

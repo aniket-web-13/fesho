@@ -1,0 +1,38 @@
+.wel-count-left{
+    // height: 500px;   
+}
+.wel-count-right{
+    @include flex (column,flex-start,center);
+    gap: 1.75rem;
+    padding-left: 3rem;
+}
+.wel-gbg{
+    position: absolute;
+    z-index: -1;
+    bottom: -45px;
+    left: -160px;
+}
+.wel-wom{
+    z-index: 1;
+    border-radius: 50%;
+}
+.wel-jar{
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    bottom: -55px;
+    right: -5px;
+}
+// wlecome sec right //
+.wel-tit{
+    @include flex (column,flex-start,center);
+    gap: 1.5rem;
+}
+.wel-h2{
+    font-size: $h2-font-size;
+    font-family: "DM Sans", sans-serif;
+    color: $main-btn-hover;
+}
+.wel-tbf{
+    @include flex (row,center,center)
+}

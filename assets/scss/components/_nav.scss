@@ -98,8 +98,10 @@
 }
 .nav-nes-link {
   display: none;
+  z-index: 10;
   border: 1px solid $gray;
   position: absolute;
+  background-color: $white;
   top: 105px;
   ul {
     @include flex(column, flex-start, space-between);
