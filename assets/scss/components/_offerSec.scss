@@ -1,0 +1,84 @@
+.offer-sec-bg {
+  background-image: url("/assets/media/jpg/offer-sec-bg.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+}
+.of-sec-pad {
+  padding: 6rem 0 2.5rem;
+}
+.of-row {
+  @include flex(row, center, space-between);
+}
+
+.of-content-box {
+  @include flex(column, flex-start, center);
+  gap: 1rem;
+  padding: 4rem 0;
+  width: 60%;
+}
+.time-countdown {
+  width: 100%;
+  padding: 1.25rem 0.75rem;
+}
+.of-green {
+  width: 160px;
+  height: 160px;
+  background-color: $greenBG;
+  border-radius: 50%;
+  font-size: 1.875rem;
+  top: -39px;
+  left: -320px;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    text-align: center;
+    white-space: pre-wrap;
+    line-height: 1;
+  }
+}
+.of-badge {
+  width: 30px;
+  height: 30px;
+  background-color: $greenBG;
+  position: absolute;
+  bottom: 5px;
+  right: 23px;
+  transform: rotate(6deg);
+}
+.time-countdown {
+  @include flex(row, center, center);
+  gap: 3rem;
+}
+.of-ct-box {
+  width: 140px;
+  padding: 1.5rem 1rem;
+  background-color: $white;
+  border-radius: 0.625rem;
+  text-transform: uppercase;
+  @include flex(column, center, center);
+//   gap: 1rem;
+  span {
+    font-size: 2.5rem;
+    color: $greenBG;
+  }
+}
+
+// section call to action //
+.call-ta{
+    @include flex(row, center, space-between);
+    border-radius: 0 0 0.625rem 0.625rem;
+    background-color: $greenBG;
+    padding: 2.25rem 3.5rem;
+    div{
+        p{
+            color: $white;
+        }
+        h2{
+            color: $white;
+        }
+    }
+}
