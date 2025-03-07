@@ -81,10 +81,8 @@ catCardsData.map((value) => {
       </div>
       <div class="cat-card-info">
          <h4><a class="dm" href="#">${value.title}</a></h4>
-      </div>
-      <div class="category-block">
-          <p> When nothing prevents our to we like best be. </p> 
-      </div>
+         <p> When nothing prevents our to we like best be. </p>
+      </div>         
   </div>
 
   `;

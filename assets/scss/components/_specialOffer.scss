@@ -1,0 +1,135 @@
+// special offer featured section //
+.feat-sec-pad {
+  padding: 7.5rem 0 5.25rem;
+}
+.feat-main-count {
+  @include flex(column, center, center);
+  gap: 1rem;
+  .feat-h {
+    width: 50%;
+    text-align: center;
+  }
+}
+.feat-card-box {
+  @include flex(row, center, center);
+  gap: 1.5rem;
+}
+.col-card {
+  // flex: 0 0 auto;
+  // width: 25%;
+}
+.feat-card {
+  width: 100%;
+  padding: 0.25rem;
+  border: 2px solid $card-border;
+  border-radius: 0.625rem;
+  &:hover {
+    border-color: $greenBG;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    .f-card-img {
+      img {
+        scale: 1;
+      }
+    }
+    .fc-lt {
+      display: block;
+    }
+  }
+}
+.f-card-img {
+  overflow: hidden;
+  img {
+    transition: all 0.2s ease;
+    scale: 1.1;
+  }
+}
+// .f-card-img img::before{
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgb(255, 255, 255)));
+//     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+//     filter: Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff",GradientType=1 );
+//     content: "";
+//     opacity: 0.3;
+//     left: -100%;
+//     pointer-events: none;
+//     z-index: 99;
+// }
+.fc-info {
+  text-align: center;
+  width: 100%;
+  padding: 1.875rem;
+  @include flex(column, center, center);
+  p {
+    color: $greenBG;
+    font-size: 1rem;
+    font-weight: $h4-font-weight;
+  }
+}
+
+.star {
+  color: $yellow;
+}
+.fc-lt {
+  @include flex(column, center, center);
+  gap: 0.25rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.fc-icon {
+  margin-bottom: 0.25rem;
+  background-color: $main-btn-hover;
+  color: $white;
+  border-radius: 50%;
+  padding: 0.75rem;
+  @include flex(column, center, center);
+}
+
+// Features section //
+.features-sec-bg {
+  background-image: url("/assets/media/jpg/features-sec-bg.webp");
+  background-repeat: no-repeat;
+  padding: 7.875rem 0 8.975rem;
+  background-color: $bg-color;
+}
+.features-container {
+  width: 1524px;
+  margin: 0 auto;
+  @include flex(row, center, space-between);
+}
+.features-block {
+  @include flex(row, center, space-between);
+  gap: 1.5rem;
+  &:hover{
+    .ft-icon{
+
+    }
+  }
+}
+.ft-icon {
+  font-size: 3rem;
+}
+.ft-cont {
+  @include flex(column, flex-start, space-between);
+  gap: 1rem;
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all 0.2s ease;
+    &:hover{
+        color: $yellow;
+    }
+  }
+  p{
+    font-size: 1rem;
+    color: $feat-p;
+  }
+}
+
+// 

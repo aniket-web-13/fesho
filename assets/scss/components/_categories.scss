@@ -76,10 +76,17 @@
   }
 }
 .cat-card-info {
+  h4{
+    margin-bottom: 0.25rem;
+  }
   a {
     font-size: 25px;
     color: $main-btn-hover;
     text-decoration: none;
+  }
+  p{
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
   }
 }
 .category-block {
