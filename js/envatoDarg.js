@@ -1,8 +1,5 @@
-# fesho
- 
-/* envato drag code */
 
-/*  let dragBox = document.querySelector(".drag-box");
+let dragBox = document.querySelector(".drag-box");
 console.log(dragBox);
 
 let draggable = document.querySelector(".drag-count");
@@ -16,7 +13,7 @@ dragBox.addEventListener("mousedown", (e) => {
   pressed = true;
   startX = e.offsetX - draggable.offsetLeft;
   dragBox.style.cursor = "pointer";
-  console.log((startX = e.offsetX - draggable.offsetLeft));
+  console.log(startX);  
 });
 
 dragBox.addEventListener("mouseenter", () => {
@@ -24,28 +21,15 @@ dragBox.addEventListener("mouseenter", () => {
 });
 
 dragBox.addEventListener("mouseup", () => {
-//   dragBox.style.cursor = "hold";
   pressed = false;
 });
 
-dragBox.addEventListener("mousemove", (e) => {
-  if (!pressed) return;
-  e.preventDefault();
-
-  x = e.offsetX;
-  draggable.style.left = `${x - startX}px`;
-
-//   console.log(`x: ${x}, startx: ${startX}`);
-//   console.log(`Diff: ${x - startX}`);
-
-  innerSlider.style.left = `${x - startX}px`;
-  checkBoundary();
-});
 
 let boundItems = () => {
   let outer = dragBox.getBoundingClientRect();
   let inner = draggable.getBoundingClientRect();
 
+ 
   if (parseInt(draggable.style.left) > 0) {
     draggable.style.left = "0px";
   }
@@ -55,15 +39,14 @@ let boundItems = () => {
   }
 };
 
-// boundItems()
+// console.log(boundItems());
 
 dragBox.addEventListener("mousemove", (e) => {
-  if (!pressed) return;
-  e.preventDefault();
-
-  x = e.offsetX;
-  draggable.style.left = `${x - startX}px`;
-  boundItems();
-});
-
-console.log(boundItems()); */
+    if (!pressed) return;
+    e.preventDefault();
+  
+    x = e.offsetX;
+    draggable.style.left = `${x - startX}px`;
+  
+    boundItems(); 
+  });

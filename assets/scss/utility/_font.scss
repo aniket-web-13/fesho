@@ -38,7 +38,9 @@ h1 {
 }
 
 h2 {
+  font-family: "DM Sans", sans-serif;
   font-size: $h2-font-size;
+  color: $main-btn-hover;
   line-height: 1.2em;
   font-weight: 700;
 }
@@ -51,7 +53,7 @@ p{
 }
 .sch-title {
   font-family: "Schoolbell", cursive;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   color: $greenBG;
   font-weight: 400;
 }

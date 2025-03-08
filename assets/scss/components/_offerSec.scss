@@ -1,6 +1,7 @@
 .offer-sec-bg {
   background-image: url("/assets/media/jpg/offer-sec-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 0;
 }
 .of-sec-pad {
@@ -14,7 +15,7 @@
   @include flex(column, flex-start, center);
   gap: 1rem;
   padding: 4rem 0;
-  width: 60%;
+  width: 50%;
 }
 .time-countdown {
   width: 100%;
@@ -26,8 +27,8 @@
   background-color: $greenBG;
   border-radius: 50%;
   font-size: 1.875rem;
-  top: -39px;
-  left: -320px;
+  top: -80px;
+  left: -390px;
 
   span {
     position: absolute;

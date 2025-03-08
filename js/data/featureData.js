@@ -16,7 +16,8 @@ let featData = [
         title:"Lettus",
     },
 ]
-let featCardCount = document.getElementById("featCardCount");console.log(featCardCount);
+let featCardCount = document.getElementById("featCardCount");
+// console.log(featCardCount);
 
 featData.map((value) => {
     featCardCount.innerHTML += `
@@ -68,7 +69,8 @@ let featuresData = [
         desc:"You're on safe and secure",
     },
 ]
-let featuresBox = document.getElementById("featuresBox");console.log(featuresBox);
+let featuresBox = document.getElementById("featuresBox");
+// console.log(featuresBox);
 
 featuresData.map((value) => {
     featuresBox.innerHTML += `

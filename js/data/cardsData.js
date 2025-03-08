@@ -1,6 +1,6 @@
 // section 1 cards data //
 let secCardsCount = document.getElementById("secCardsCount");
-console.log(secCardsCount);
+// console.log(secCardsCount);
 
 let secCardsInfo = [
   {
@@ -42,7 +42,7 @@ secCardsInfo.map((value) => {
 
 // Categories section cards //
 let catCardCount = document.getElementById("catCardCount");
-console.log(catCardCount);
+// console.log(catCardCount);
 
 let catCardsData = [
   {

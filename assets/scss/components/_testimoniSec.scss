@@ -3,6 +3,99 @@
   background-color: $bg-color;
   padding: 2.75rem 0 2rem;
 }
+.drag-box {
+  width: 100%;
+  height: 55px;
+  // margin-top: 2rem;
+  // padding-bottom: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
 .drag-count {
-  z-index: 0;
+  // pointer-events: none;
+  display: flex;
+  gap: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include flex(row, center, space-between);
+}
+
+.enva-h {
+  height: 150px;
+}
+
+.item {
+  padding: 1rem 3rem;
+  color: $main-btn-hover;
+  opacity: 0.5;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// use for hr //
+
+.hr {
+  width: 100%;
+  border: 1px solid $gray;
+  opacity: 0.5;
+}
+//================================================================//
+/* Testimoni section scss */
+
+.testimoni-bg {
+  background-image: url("/assets/media/png/hp-testmoni-bg.png");
+  background-repeat: no-repeat;
+}
+.test-content-box {
+  width: 40%;
+  @include flex(column, flex-start, space-between);
+  gap: 1.125rem;
+  .sch-title {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.test-btn-box {
+  @include flex(row, flex-start, space-between);
+  gap: 0.5rem;
+}
+.test-btn {
+  padding: 0.325rem;
+  border-radius: 50%;
+  background-color: $main-btn-hover;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.test-tog {
+  opacity: 1;
+}
+// bottom testimoni fruit basket content //
+.tf-count{
+  @include flex(column,flex-start, start);
+  width: 40%;
+  padding: 1rem 0;
+}
+.test-fruit {
+  
+  @include flex(row,flex-start, start);
+  gap: 1.25rem;
+  padding: 1rem 0 1rem;
+}
+.tfruit-info{
+  h2{
+    font-size: 3.125rem;
+    color: $greenBG;
+    padding-bottom: 1rem;
+  }
 }

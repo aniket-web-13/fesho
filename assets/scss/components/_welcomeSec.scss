@@ -28,11 +28,6 @@
     @include flex (column,flex-start,center);
     gap: 1.5rem;
 }
-.wel-h2{
-    font-size: $h2-font-size;
-    font-family: "DM Sans", sans-serif;
-    color: $main-btn-hover;
-}
 .wel-tbf{
     @include flex (row,center,center)
 }
