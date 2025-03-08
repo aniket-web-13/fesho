@@ -5,6 +5,9 @@ console.log(dragBox);
 let draggable = document.querySelector(".drag-count");
 console.log(draggable);
 
+let item = document.querySelector(".item");console.log(item);
+
+
 let pressed = false;
 let startX;
 let x;
