@@ -15,10 +15,9 @@
   overflow: hidden;
 }
 .drag-count {
-  // pointer-events: none;
+  pointer-events: none;
   display: flex;
   gap: 10px;
-  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -30,6 +29,7 @@
 }
 
 .item {
+  // pointer-events: fill;
   padding: 1rem 3rem;
   color: $main-btn-hover;
   opacity: 0.5;
@@ -57,6 +57,7 @@
   width: 40%;
   @include flex(column, flex-start, space-between);
   gap: 1.125rem;
+  padding-bottom: 8rem;
   .sch-title {
     font-size: 1.25rem;
   }
@@ -77,34 +78,82 @@
   cursor: pointer;
 }
 
+.test-main {
+  @include flex(row, center, space-between);
+}
+
 .test-tog {
   opacity: 1;
 }
 
 // client testimoni count scss //
+.testimoni-item-box {
+  @include flex(row, center, center);
+  position: absolute;
+  right: -2700px;
+  top: 0px;
+}
 
-// .test-client{
-
-// }
-
-
-
-
+.testimoni-in-client {
+  padding: 3.75rem 0.975rem 1.785rem;
+}
+.tc-inner-count {
+  position: relative;
+  @include flex(column, flex-end, flex-end);
+  background-color: $greenBG;
+  border-radius: 0.625rem;
+  width: 455px;
+  height: 504px;
+}
+.tc-info {
+  width: 100%;
+  height: 99%;
+  padding: 2.5rem 3.125rem 1.875rem;
+  @include flex(column, flex-start, space-between);
+  background-color: $white;
+  border-radius: 0.625rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+}
+.tc-row {
+  @include flex(column, flex-start, space-between);
+  gap: 1rem;
+  padding-bottom: 1.125rem;
+  h4 {
+    color: $main-btn-hover;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+.tc-img {
+  position: absolute;
+  top: -60px;
+  right: 40px;
+ img{
+  border-radius: 0.625rem;
+ }
+}
+.tc-content {
+  p {
+    font-size: 1.125rem;
+    line-height: 32px;
+  }
+}
 
 // bottom testimoni fruit basket content //
-.tf-count{
-  @include flex(column,flex-start, start);
+.tf-count {
+  @include flex(column, flex-start, start);
   width: 40%;
   padding: 1rem 0;
 }
 .test-fruit {
-  
-  @include flex(row,flex-start, start);
+  @include flex(row, flex-start, start);
   gap: 1.25rem;
   padding: 1rem 0 1rem;
 }
-.tfruit-info{
-  h2{
+.tfruit-info {
+  h2 {
     font-size: 3.125rem;
     color: $greenBG;
     padding-bottom: 1rem;
