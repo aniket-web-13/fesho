@@ -1,61 +1,41 @@
-let testBtn = document.querySelectorAll(".test-btn");
-console.log(testBtn);
-
-let currentBtn;
-
-for (let i = 0; i < testBtn.length; i++) {
-//   const element = testBtn[i];
-
-  testBtn[i].addEventListener("click", () => {
-    testBtn[i].classList.toggle("test-tog");
-  });
-  console.log(testBtn[i]);
-}
-
 let testimoniMainBox = document.getElementById("testimoniMainBox");
-console.log(testimoniMainBox);
-
+// console.log(testimoniMainBox);
 
 let clientData = [
   {
-    src:"./assets/media/jpg/jhon-d.jpg",
-    name:"Fardin Sayyad",
-    post:"Co founder",    
+    src: "./assets/media/jpg/fardin-Sayyad.jpg",
+    name: "Fardin Sayyad",
+    post: "Founder of Mali.AI",
   },
   {
-    src:"./assets/media/jpg/jhon-d.jpg",
-    name:"Kartik .B",
-    post:"Ceo",    
+    src: "./assets/media/jpg/jhon-d.jpg",
+    name: "Kartik .B",
+    post: "Ceo",
   },
   {
-    src:"./assets/media/jpg/jhon-d.jpg",
-    name:"Aniket .B",
-    post:"Employe",    
+    src: "./assets/media/jpg/jhon-d.jpg",
+    name: "Hashimi .s",
+    post: "office Boy",
   },
   {
-    src:"./assets/media/jpg/jhon-d.jpg",
-    name:"Hashimi .s",
-    post:"office Boy",    
+    src: "./assets/media/jpg/jhon-d.jpg",
+    name: "Moin .s",
+    post: "Watchmen",
   },
   {
-    src:"./assets/media/jpg/jhon-d.jpg",
-    name:"Moin .s",
-    post:"Watchmen",    
+    src: "./assets/media/jpg/jhon-d.jpg",
+    name: "Humair .s",
+    post: "Manager",
   },
   {
-    src:"./assets/media/jpg/jhon-d.jpg",
-    name:"Humair .s",
-    post:"Manager",    
+    src: "./assets/media/jpg/jhon-d.jpg",
+    name: "Jonny Lala",
+    post: "Ass Manager",
   },
-  {
-    src:"./assets/media/jpg/jhon-d.jpg",
-    name:"Jonny Lala",
-    post:"Ass Manager",    
-  },
-]
+];
 
-clientData.map((value) =>{
-  testimoniMainBox.innerHTML +=`
+clientData.map((value) => {
+  testimoniMainBox.innerHTML += `
   
   <div class="testimoni-in-client relative">
       <div class="tc-inner-count">
@@ -85,5 +65,33 @@ clientData.map((value) =>{
       </div>
   </div>
   
-  `
-}) 
+  `;
+});
+
+/* testimoni card carousal */
+
+// let slideIndex = 0;
+
+function changeTestCard() {
+  let testCard = document.getElementsByClassName("testimoni-in-client");
+  console.log(testCard);
+
+  let testBtn = document.getElementsByClassName("test-btn");
+  console.log(testBtn);
+
+  testBtn[0].addEventListener("click", () => {
+    testCard[0].classList.add("testShow");
+    testCard[0].classList.remove("testHide");
+    testCard[1].classList.add("testShow");
+    testCard[1].classList.remove("testHide");
+  });
+
+  // testBtn.forEach((btn, i) => {
+  //   btn.addEventListener("click", () => {
+  //     return btn.classList.toggle("test-tog");
+  //   });
+  //   console.log(btn);
+  // });
+}
+
+changeTestCard();

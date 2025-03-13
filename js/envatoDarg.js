@@ -1,11 +1,12 @@
 
 let dragBox = document.querySelector(".drag-box");
-console.log(dragBox);
+// console.log(dragBox);
 
 let draggable = document.querySelector(".drag-count");
-console.log(draggable);
+// console.log(draggable);
 
-let item = document.querySelector(".item");console.log(item);
+let item = document.querySelector(".item");
+// console.log(item);
 
 
 let pressed = false;
@@ -16,7 +17,7 @@ dragBox.addEventListener("mousedown", (e) => {
   pressed = true;
   startX = e.offsetX - draggable.offsetLeft;
   dragBox.style.cursor = "pointer";
-  console.log(startX);  
+  // console.log(startX);  
 });
 
 dragBox.addEventListener("mouseenter", () => {
