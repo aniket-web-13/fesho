@@ -1,0 +1,35 @@
+.na-main-box {
+    @include flex (column, center, center);
+    gap: 2rem;
+    text-align: center;
+}
+
+.na-card {
+    width: 375px;
+    @include flex (column, center, center);
+    // gap: 1rem;
+    border-radius: 0.625rem;
+    border: 1px solid $gray;
+}
+
+.na-img {
+    overflow: hidden;
+    width: 100%;
+    // scale: 1.1;
+    border-radius: 0.625rem;
+
+    img {
+        width: 100%;
+        transition: all 0.5s ease;
+        border-radius: 0.625rem;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
+.ns-info{
+    padding: 1.563rem 1.875rem 1.875rem;
+    @include flex (column, center, center);
+    gap: 1rem;
+}

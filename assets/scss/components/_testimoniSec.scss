@@ -58,7 +58,7 @@
   width: 40%;
   @include flex(column, flex-start, space-between);
   gap: 1.125rem;
-  padding-bottom: 8rem;
+  padding: 5rem 0 8rem 0;
   .sch-title {
     font-size: 1.25rem;
   }
@@ -76,6 +76,7 @@
   border-radius: 50%;
   background-color: $main-btn-hover;
   opacity: 0.7;
+  border: none;
   cursor: pointer;
 }
 
@@ -94,10 +95,11 @@ overflow: hidden;
   @include flex(row, center, center);
   position: absolute;
   right: -265px;
-  top: 0px;
+  top: 70px;
 }
 
 .testimoni-in-client {
+  transition: all 0.7s ease;
   padding: 3.75rem 0.975rem 1.785rem;
 }
 .tc-inner-count {

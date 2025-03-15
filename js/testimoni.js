@@ -37,7 +37,7 @@ let clientData = [
 clientData.map((value) => {
   testimoniMainBox.innerHTML += `
   
-  <div class="testimoni-in-client relative">
+  <div class="testimoni-in-client ">
       <div class="tc-inner-count">
           <div class="tc-info">
               <div class="tc-row">
@@ -73,25 +73,43 @@ clientData.map((value) => {
 // let slideIndex = 0;
 
 function changeTestCard() {
-  let testCard = document.getElementsByClassName("testimoni-in-client");
-  console.log(testCard);
+  let testCards = document.getElementsByClassName("testimoni-in-client");
+  let testBtns = document.getElementsByClassName("test-btn");
 
-  let testBtn = document.getElementsByClassName("test-btn");
-  console.log(testBtn);
+  function handleClick(index) {
 
-  testBtn[0].addEventListener("click", () => {
-    testCard[0].classList.add("testShow");
-    testCard[0].classList.remove("testHide");
-    testCard[1].classList.add("testShow");
-    testCard[1].classList.remove("testHide");
-  });
+    for (let i = 0; i < testCards.length; i++) {
+      testCards[i].style.transform = "translateX(0)";
+    }
 
-  // testBtn.forEach((btn, i) => {
-  //   btn.addEventListener("click", () => {
-  //     return btn.classList.toggle("test-tog");
-  //   });
-  //   console.log(btn);
-  // });
+    if (index === 0) {
+      for (let i = 0; i < testCards.length; i++) {
+        testCards[i].style.transform = "translateX(0)";
+      }
+    } else if (index === 1) {
+      for (let i = 0; i < testCards.length; i++) {
+        testCards[i].style.transform = "translateX(-980px)";
+      }
+    } else if (index === 2) {
+      for (let i = 0; i < testCards.length; i++) {
+        testCards[i].style.transform = "translateX(-1945px)";
+      }
+    }
+
+    for (let i = 0; i < testBtns.length; i++) {
+      testBtns[i].style.backgroundColor = i === index ? "#164333" : "";
+    }
+  }
+
+  for (let i = 0; i < testBtns.length; i++) {
+    testBtns[i].addEventListener("click", () => handleClick(i));
+  }
+
+  setInterval(() => {
+    slideIndex++;
+  }, 1000);
 }
 
 changeTestCard();
+
+

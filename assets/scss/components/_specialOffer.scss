@@ -2,47 +2,59 @@
 .feat-sec-pad {
   padding: 7.5rem 0 5.25rem;
 }
+
 .feat-main-count {
   @include flex(column, center, center);
   gap: 1rem;
-  .feat-h {
-    width: 50%;
-    text-align: center;
-  }
+
 }
+
+.feat-h {
+  width: 50%;
+  text-align: center;
+}
+
 .feat-card-box {
   @include flex(row, center, center);
   gap: 1.5rem;
 }
+
 .col-card {
   // flex: 0 0 auto;
   // width: 25%;
 }
+
 .feat-card {
   width: 100%;
   padding: 0.25rem;
   border: 2px solid $card-border;
   border-radius: 0.625rem;
+
   &:hover {
     border-color: $greenBG;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+
     .f-card-img {
       img {
         scale: 1;
       }
     }
+
     .fc-lt {
       display: block;
     }
   }
 }
+
 .f-card-img {
   overflow: hidden;
+
   img {
     transition: all 0.2s ease;
     scale: 1.1;
   }
 }
+
 // .f-card-img img::before{
 //     position: absolute;
 //     left: 0;
@@ -63,6 +75,7 @@
   width: 100%;
   padding: 1.875rem;
   @include flex(column, center, center);
+
   p {
     color: $greenBG;
     font-size: 1rem;
@@ -73,6 +86,7 @@
 .star {
   color: $yellow;
 }
+
 .fc-lt {
   @include flex(column, center, center);
   gap: 0.25rem;
@@ -81,6 +95,7 @@
   right: 10px;
   display: none;
 }
+
 .fc-icon {
   margin-bottom: 0.25rem;
   background-color: $main-btn-hover;
@@ -97,36 +112,42 @@
   padding: 7.875rem 0 8.975rem;
   background-color: $bg-color;
 }
+
 .features-container {
   width: 1524px;
   margin: 0 auto;
   @include flex(row, center, space-between);
 }
+
 .features-block {
   @include flex(row, center, space-between);
   gap: 1.5rem;
-  &:hover{
-    .ft-icon{
 
-    }
+  &:hover {
+    .ft-icon {}
   }
 }
+
 .ft-icon {
   font-size: 3rem;
 }
+
 .ft-cont {
   @include flex(column, flex-start, space-between);
   gap: 1rem;
+
   a {
     color: $white;
     text-decoration: none;
     font-size: 1.125rem;
     transition: all 0.2s ease;
-    &:hover{
-        color: $yellow;
+
+    &:hover {
+      color: $yellow;
     }
   }
-  p{
+
+  p {
     font-size: 1rem;
     color: $feat-p;
   }
