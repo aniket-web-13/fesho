@@ -17,3 +17,8 @@
     font-size: 1.75rem;
   }
 }
+
+.read-btn{
+  width: 100%;
+  @include mainBtnC ($read-bg,$main-btn-hover,$yellow,$main-btn-hover);
+}

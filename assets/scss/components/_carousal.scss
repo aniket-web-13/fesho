@@ -1,0 +1,63 @@
+// section envato drag //
+.envato-drag {
+  background-color: $bg-color;
+  padding: 2.75rem 0 2rem;
+}
+.drag-box {
+  width: 100%;
+  height: 202px;
+  // margin-top: 2rem;
+  // padding-bottom: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.drag-count {
+  width: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.drag {
+  //   width: 100%;
+  @include flex(row, center, space-between);
+}
+.enva-h {
+  height: 150px;
+}
+
+.item {
+  // pointer-events: fill;
+  padding: 1rem 3rem;
+  color: $main-btn-hover;
+  opacity: 0.5;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// use for hr //
+
+.hr {
+  width: 100%;
+  border: 1px solid $gray;
+  opacity: 0.5;
+}
+//================================================================//
+
+/* Gallery carousal section scss */
+
+.gel-container {
+  width: 1350px;
+  margin: 0 auto;
+}
+
+.item-img{
+    img{
+        
+    }
+}

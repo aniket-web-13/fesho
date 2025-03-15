@@ -1,35 +1,53 @@
 .na-main-box {
-    @include flex (column, center, center);
-    gap: 2rem;
-    text-align: center;
+  @include flex(column, center, center);
+  gap: 2rem;
+  text-align: center;
 }
 
 .na-card {
-    width: 375px;
-    @include flex (column, center, center);
-    // gap: 1rem;
-    border-radius: 0.625rem;
-    border: 1px solid $gray;
+  width: 375px;
+  @include flex(column, flex-start, center);
+  // gap: 1rem;
+  border-radius: 0.625rem;
+  border: 1px solid #dddddd;
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    .na-img img {
+      scale: 1.1;
+    }
+  }
 }
 
 .na-img {
-    overflow: hidden;
+  overflow: hidden;
+  width: 100%;
+  // scale: 1.1;
+
+  img {
     width: 100%;
-    // scale: 1.1;
-    border-radius: 0.625rem;
-
-    img {
-        width: 100%;
-        transition: all 0.5s ease;
-        border-radius: 0.625rem;
-
-        &:hover {
-            scale: 1.1;
-        }
-    }
+    transition: all 0.5s ease;
+    border-radius: 0 0.625rem 0 0;
+  }
 }
-.ns-info{
-    padding: 1.563rem 1.875rem 1.875rem;
-    @include flex (column, center, center);
-    gap: 1rem;
+.ns-info {
+  padding: 1.563rem 1.875rem 1.875rem;
+  @include flex(column, flex-start, center);
+  gap: 1rem;
+  text-align: left;
+  ul,
+  li {
+    list-style: none;
+    @include flex(row, center, center);
+    gap: 0.5rem;
+    font-size: $sm-font;
+  }
+  h4 {
+    font-size: $h4-font-size;
+    font-weight: $h5-font-weight;
+    padding-right: 1rem;
+    a {
+      color: $main-btn-hover;
+      text-decoration: none;
+    }
+  }
 }

@@ -1,56 +1,57 @@
 
-let dragBox = document.querySelector(".drag-box");
-// console.log(dragBox);
 
-let draggable = document.querySelector(".drag-count");
-// console.log(draggable);
+
+
+
+let dragBox = document.getElementsByClassName("drag-box");
+console.log(dragBox);
+
+let draggable = document.getElementsByClassName("drag-count");
+console.log(draggable);
 
 let item = document.querySelector(".item");
-// console.log(item);
-
+console.log(item);
 
 let pressed = false;
 let startX;
 let x;
 
-dragBox.addEventListener("mousedown", (e) => {
+dragBox[0].addEventListener("mousedown", (e) => {
   pressed = true;
-  startX = e.offsetX - draggable.offsetLeft;
-  dragBox.style.cursor = "pointer";
-  // console.log(startX);  
+  startX = e.offsetX - draggable[0].offsetLeft;
+  dragBox[0].style.cursor = "pointer";
+  // console.log(startX);
 });
 
-dragBox.addEventListener("mouseenter", () => {
-  dragBox.style.cursor = "pointer";
+dragBox[0].addEventListener("mouseenter", () => {
+  dragBox[0].style.cursor = "pointer";
 });
 
-dragBox.addEventListener("mouseup", () => {
+dragBox[0].addEventListener("mouseup", () => {
   pressed = false;
 });
 
-
 let boundItems = () => {
-  let outer = dragBox.getBoundingClientRect();
-  let inner = draggable.getBoundingClientRect();
+  let outer = dragBox[0].getBoundingClientRect();
+  let inner = draggable[0].getBoundingClientRect();
 
- 
-  if (parseInt(draggable.style.left) > 0) {
-    draggable.style.left = "0px";
+  if (parseInt(draggable[0].style.left) > 0) {
+    draggable[0].style.left = "0px";
   }
 
   if (inner.right < outer.right) {
-    draggable.style.left = `-${inner.width - outer.width}px`;
+    draggable[0].style.left = `-${inner.width - outer.width}px`;
   }
 };
 
 // console.log(boundItems());
 
-dragBox.addEventListener("mousemove", (e) => {
-    if (!pressed) return;
-    e.preventDefault();
-  
-    x = e.offsetX;
-    draggable.style.left = `${x - startX}px`;
-  
-    boundItems(); 
-  });
+dragBox[0].addEventListener("mousemove", (e) => {
+  if (!pressed) return;
+  e.preventDefault();
+
+  x = e.offsetX;
+  draggable[0].style.left = `${x - startX}px`;
+
+  boundItems();
+});

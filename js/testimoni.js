@@ -77,7 +77,6 @@ function changeTestCard() {
   let testBtns = document.getElementsByClassName("test-btn");
 
   function handleClick(index) {
-
     for (let i = 0; i < testCards.length; i++) {
       testCards[i].style.transform = "translateX(0)";
     }
@@ -104,12 +103,4 @@ function changeTestCard() {
   for (let i = 0; i < testBtns.length; i++) {
     testBtns[i].addEventListener("click", () => handleClick(i));
   }
-
-  setInterval(() => {
-    slideIndex++;
-  }, 1000);
 }
-
-changeTestCard();
-
-

@@ -87,3 +87,42 @@ catCardsData.map((value) => {
 
   `;
 });
+
+
+let nsCardCount = document.getElementById("nsCardCount");
+
+let newsArtData = [
+  {
+    src:"./assets/media/jpg/news-home-1.jpg",    
+  },
+  {
+    src:"./assets/media/jpg/news-home-2.jpg",    
+  },
+  {
+    src:"./assets/media/jpg/news-home-3.jpg",    
+  },
+]
+
+newsArtData.map((value) => {
+  nsCardCount.innerHTML += `
+  
+    <div class="na-card">
+        <div class="na-img">
+            <img src="${value.src}" alt="">
+        </div>
+        <div class="ns-info">
+            <ul>
+                <li><img src="./assets/media/png/user.png" alt=""><p>by Admin</p></li>
+                <li>&#47;</li>
+                <li><img src="./assets/media/png/bubble-chat.png" alt=""><p>2 Comments</p></li>
+            </ul>
+            <h4 class="dm">
+                <a href="#">Which healthy food growth strategies required</a>
+            </h4>
+            <div class="text pop">Duis aute irure dolor lipsum simply free text the local markets</div>
+            <button class="read-btn">read more</button>
+        </div>
+    </div>
+
+  `
+})
