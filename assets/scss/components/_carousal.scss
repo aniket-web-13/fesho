@@ -56,8 +56,27 @@
   margin: 0 auto;
 }
 
-.item-img{
-    img{
-        
+.gel-hov {
+  position: absolute;
+  border-radius: 0.625rem;
+  z-index: 5;
+  width: 100%;
+  height: 99%;
+  background-color: rgba(22, 67, 51, 0.6);
+  transition: all 300ms ease;
+  opacity: 0;
+  @include flex(row, center, center);
+  font-size: 2rem;
+  color: $white;
+  transform: scale(0.7);
+}
+
+.item-img {
+  &:hover {
+    .gel-hov {
+      scale: 1;
+      opacity: 1; 
+      transform: scale(1);
     }
+  }
 }

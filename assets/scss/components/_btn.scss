@@ -22,3 +22,17 @@
   width: 100%;
   @include mainBtnC ($read-bg,$main-btn-hover,$yellow,$main-btn-hover);
 }
+
+.circle-btn{
+  padding: 0.875rem 1rem;
+  background-color: #113629;
+  border-radius: 50%;
+  color: $white;
+  font-size: $h6-font-size;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: $yellow;
+    color: $main-btn-hover;
+  }
+}

@@ -1,0 +1,38 @@
+.foot-main-bg {
+  background-image: url("/assets/media/jpg/footer-bg.jpg");
+}
+.foot-top {
+  padding: 6.875rem 0 3.75rem;
+}
+.foot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.f-info {
+  @include flex(column, flex-start, center);
+  gap: 1.5rem;
+  p {
+    color: $white;
+    font-size: $h5-font-size;
+    margin-bottom: 1rem;
+  }
+}
+
+.fl-title {
+  color: #ffffff;
+  font-size: $h5-font-size;
+  font-weight: $h5-font-weight;
+  margin-bottom: 1.563rem;
+}
+.foott-links {
+  ul {
+    list-style: none;    
+    li{
+        margin-bottom: 0.625rem;
+    }
+  }
+  a{
+    color: #8fa89f;
+    text-decoration: none;
+  }
+}
