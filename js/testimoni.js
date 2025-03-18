@@ -5,7 +5,7 @@ let clientData = [
   {
     src: "./assets/media/jpg/fardin-Sayyad.jpg",
     name: "Fardin Sayyad",
-    post: "Founder of Mali.AI",
+    post: "Founder of Redlight",
   },
   {
     src: "./assets/media/jpg/jhon-d.jpg",

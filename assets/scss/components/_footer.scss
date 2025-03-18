@@ -9,7 +9,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .f-info {
-  @include flex(column, flex-start, center);
+  width: 370px;
+  padding-right: 1rem;
+  @include flex(column, flex-start, flex-start);
   gap: 1.5rem;
   p {
     color: $white;
@@ -24,15 +26,53 @@
   font-weight: $h5-font-weight;
   margin-bottom: 1.563rem;
 }
-.foott-links {
+.foot-links {
   ul {
-    list-style: none;    
-    li{
-        margin-bottom: 0.625rem;
+    list-style: none;
+    li {
+      margin-bottom: 0.625rem;
+      @include flex(row, flex-start, flex-start);
+      gap: 1.25rem;
     }
   }
-  a{
+  a {
     color: #8fa89f;
     text-decoration: none;
   }
+}
+.med-li {
+  @include flex(column, flex-start, space-between);
+  strong {
+    color: $white;
+  }
+  a {
+    transition: all 0.3s ease;
+    &:hover {
+      color: $white;
+    }
+  }
+  address {
+    color: #8fa89f;
+  }
+}
+.f-icon {
+  color: $warning;
+  font-size: 1.25rem;
+}
+.foot-form{
+  @include flex(column,center, space-between);
+  gap: 1rem;
+  .main-btn{
+    width: 100%;
+  }
+}
+.foot-input{
+  width: 100%;
+  padding: 0.938rem 1.25rem;
+  border-radius: 0.625rem;
+  border: none;
+}
+.f-links{
+  width: 180px;
+  column-span: 2;
 }

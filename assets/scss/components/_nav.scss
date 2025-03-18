@@ -117,3 +117,30 @@
     }
   }
 }
+// ham btn //
+.hamBtn{
+  display: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.ham-main-box{
+  background-color: $white;
+  border:1px solid black;
+  width: 285px;
+}
+
+.ham-up-box{
+  padding: 1.25rem;
+  @include flex (row,center,space-between);
+}
+.cross{
+  font-size: 2.25rem;
+}
+.hl-count{
+  @include flex (column,flex-start,space-between);
+}
+.ham-link{
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+}

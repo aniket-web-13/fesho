@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fesho</title>
     <link rel="stylesheet" href="./dist/style.css">
-    <link rel="stylesheet" href="./dist/responsive.css">
+    <link rel="stylesheet" href="./dist/responsive.css">    
 </head>
 
 <body>
@@ -21,10 +21,12 @@
                                 <address><span class="icon"><i class="fa-solid fa-map"></i></span>88 broklyn golden
                                     street. New York</address>
                             </li>
-                            <li><a href="#"><span class="icon"><i
-                                            class="fa-solid fa-envelope"></i></span>needhelp@company</a></li>
-                            <li><a href="#tel:+1(307)776-0608"><span class="icon"><i
-                                            class="fa-solid fa-mobile-button"></i></span>+1(307)776-0608</a></li>
+                            <li>
+                                <a href="#"><span class="icon"><i class="fa-solid fa-envelope"></i></span>needhelp@company</a>
+                            </li>
+                            <li>
+                                <a href="#tel:+1(307)776-0608"><span class="icon"><i class="fa-solid fa-mobile-button"></i></span>+1(307)776-0608</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="nt-right">
@@ -86,12 +88,25 @@
                         <ul>
                             <li id="searchBtn"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                             <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                            <li><button class="main-btn">Shop Now</button></li>
+                            <li>
+                                <button class="main-btn nav-btn">Shop Now</button>
+                                <button class="hamBtn"><i class="fa-solid fa-bars"></i></button>
+                            </li>
                         </ul>
+                    </div>                    
+                </div>                
+            </div>
+            <div class="ham-main-box">
+                <div class="ham-up-box">
+                    <img src="./assets/media/png/fesho-logo.png" alt="">
+                    <div class="cross">
+                        <img src="./assets/media/png/close.png" alt="">
                     </div>
                 </div>
+                <div class="hl-count">
+                    <a href="#" class="ham-link">wsdwad</a>
+                </div>
             </div>
-
         </nav>
         <header>
             <div class="bg-img-top bg-head-color"></div>
@@ -474,7 +489,7 @@
                             </div>
                             <div class="f-links">
                                 <h5 class="dm fl-title">Explore</h5>
-                                <div class="foott-links">
+                                <div class="foot-links">
                                     <ul class="pop">
                                         <li><a href="#">About Company</a></li>
                                         <li><a href="#">Our Services</a></li>
@@ -484,8 +499,47 @@
                                     </ul>
                                 </div>                                
                             </div>
-                            <div class="f3"></div>
-                            <div class="f4"></div>
+                            <div class="f-socail">
+                                <h5 class="dm fl-title">Contact</h5>
+                                <div class="foot-links">
+                                    <ul class="pop">
+                                        <li>
+                                            <div class="f-icon">
+                                                <i class="fa-solid fa-square-phone-flip"></i>
+                                            </div>
+                                            <div class="med-li">
+                                                <strong>Phone</strong>
+                                                <a href="tel:+926668880000">+92 666 888 0000</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="f-icon">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </div>
+                                            <div class="med-li">
+                                                <strong>Email</strong>
+                                                <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="f-icon">
+                                                <i class="fa-solid fa-location-pin"></i>
+                                            </div>
+                                            <div class="med-li">
+                                                <strong>Address</strong>
+                                                <address>66 road, broklyn street new york</address>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>                                
+                            </div>
+                            <div class="f4">
+                                <h5 class="dm fl-title">Newsletter</h5>                                
+                                <form action="#" class="foot-form">
+                                    <input class="foot-input" type="text" placeholder="Enter your Email">
+                                    <button class="main-btn">Subscribe</button>            
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

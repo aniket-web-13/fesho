@@ -1,6 +1,9 @@
 @media (max-width: 768px) {
 
     .container{
-        width: 720px !important;
+        width: 720px;
+    }
+    .nav-green{
+        display: none;
     }
  }

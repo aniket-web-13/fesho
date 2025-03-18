@@ -61,7 +61,7 @@
   border-radius: 0.625rem;
   text-transform: uppercase;
   @include flex(column, center, center);
-//   gap: 1rem;
+  //   gap: 1rem;
   span {
     font-size: 2.5rem;
     color: $greenBG;
@@ -69,21 +69,21 @@
 }
 
 // section call to action //
-.call-ta{
+.call-ta {
   width: 90%;
   margin: 0 auto;
-    @include flex(row, center, space-between);
-    border-radius: 0 0 0.625rem 0.625rem;
-    background-color: $greenBG;
-    padding: 3.5rem 3.5rem;
-    div{
-        p{
-            color: $white;
-            font-size: 1.125rem;
-        }
-        h2{
-            color: $white;
-            font-size: 2.125rem;
-        }
+  @include flex(row, center, space-between);
+  border-radius: 0 0 0.625rem 0.625rem;
+  background-color: $greenBG;
+  padding: 3.5rem 3.5rem;
+  div {
+    p {
+      color: $white;
+      font-size: 1.125rem;
     }
+    h2 {
+      color: $white;
+      font-size: 2.125rem;
+    }
+  }
 }

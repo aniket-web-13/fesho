@@ -1,7 +1,9 @@
-@media (max-width: 576px) { 
-
-    .container{
-        width: 540px !important;
-    }
-
+@media (max-width: 576px) {
+  .container {
+    width: 540px !important;
+  }
+  .features-container {
+    width: 100%;
+    flex-direction: column !important;
+  }
 }
