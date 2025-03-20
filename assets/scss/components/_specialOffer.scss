@@ -5,7 +5,7 @@
 
 .feat-main-count {
   @include flex(column, center, center);
-  gap: 1rem;
+  gap: 2rem;
 
 }
 
@@ -19,10 +19,10 @@
   gap: 1.5rem;
 }
 
-.col-card {
-  // flex: 0 0 auto;
-  // width: 25%;
-}
+// .col-card {
+//   // flex: 0 0 auto;
+//   // width: 25%;
+// }
 
 .feat-card {
   width: 100%;
@@ -122,10 +122,6 @@
 .features-block {
   @include flex(row, center, space-between);
   gap: 1.5rem;
-
-  &:hover {
-    .ft-icon {}
-  }
 }
 
 .ft-icon {

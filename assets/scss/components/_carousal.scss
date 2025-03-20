@@ -23,7 +23,8 @@
 }
 .drag {
   //   width: 100%;
-  @include flex(row, center, space-between);
+  @include flex(row, center, center);
+  gap: 1rem;
 }
 .enva-h {
   height: 150px;
@@ -40,6 +41,13 @@
   }
 }
 
+.ab-envato{
+  background-color: $white;
+}
+
+.dc-po{
+  top: 100px;
+}
 // use for hr //
 
 .hr {

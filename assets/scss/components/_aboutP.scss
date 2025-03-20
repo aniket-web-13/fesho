@@ -1,0 +1,53 @@
+.page-title {
+  padding: 6.25rem 0 6.875rem;
+  background-image: url("/assets/media/jpg/page-title-bg.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+}
+.page-title:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #131313;
+  opacity: 0.8;
+  content: "";
+}
+.title-box{
+    width: 100%;
+    text-align: left;
+    z-index: 99;
+    position: relative;
+    color: $white;
+    ul{
+        list-style: none;
+    }
+}
+.title-box h1{
+    color: $white;
+    font-size: $h1-sec-fs;    
+    margin-bottom: $h5-font-size
+}
+.breadcrumb-page{
+    @include flex(row,center,flex-start);
+    gap: 2rem;
+    text-transform: capitalize;
+}
+.breadcrumb-page li{
+    position: relative;
+}
+.breadcrumb-page li::after{
+    position: absolute;
+    content: url("/assets/media/png/right-arrow.png");
+    left: 55px;
+    top: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    color: #ffffff;
+}
