@@ -1,9 +1,33 @@
 
 
-function titleChange() {
-    let titleBox = document.getElementById("titleBox");console.log(titleBox);
-    let h1 = document.createElement("h1");console.log(h1);
-    
-}
 
-titleChange()
+// function Breadcrumbs(path) {
+//     let navName = document.getElementsByClassName("navName")
+//     console.log(navName);  
+
+//     const breadcrumbContainer = document.querySelector('.breadcrumb');
+//     console.log(breadcrumbContainer);
+
+//     const pathSegments = path.split('/');
+//     console.log(pathSegments);
+
+//     breadcrumbContainer.innerHTML = pathSegments.map((segment, index) => {
+        
+//         if (index === pathSegments.length - 1) {
+//             console.log(segment);
+//             return `<li>${segment}</li>`;
+//         } else {
+//             const href = '/' + pathSegments.slice(0, index + 1).join('/');
+
+//             console.log(pathSegments.slice(0, index + 1));
+            
+//             return `<li><a href="${href}">${segment}</a></li>`;
+//         }
+
+//     }).join('');
+
+//     console.log(path);
+
+// }
+
+// Breadcrumbs(window.location.pathname);

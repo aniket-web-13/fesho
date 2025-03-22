@@ -58,7 +58,7 @@
   width: 140px;
   padding: 1.5rem 1rem;
   background-color: $white;
-  border-radius: 0.625rem;
+  border-radius: $img-br;
   text-transform: uppercase;
   @include flex(column, center, center);
   //   gap: 1rem;

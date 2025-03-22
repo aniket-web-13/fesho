@@ -67,7 +67,7 @@ overflow: hidden;
   padding: 2.5rem 3.125rem 1.875rem;
   @include flex(column, flex-start, space-between);
   background-color: $white;
-  border-radius: 0.625rem;
+  border-radius: $img-br;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
 }
 .tc-row {
@@ -90,7 +90,7 @@ overflow: hidden;
   right: 40px;
  img{
   width: 100%;
-  border-radius: 0.625rem;
+  border-radius: $img-br;
  }
 }
 .tc-content {

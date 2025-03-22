@@ -1,12 +1,4 @@
-.sec-flex{
-    @include flex(row,center,center);
-    gap: 1rem;
-    padding: 3.5rem 0;
-}
-.sec-flex-col{
-    @include flex(column,center,center);
-    gap: 3rem;
-}
+
 .card-info{
     @include flex(column,flex-start,space-between);
     gap: 0.5rem;

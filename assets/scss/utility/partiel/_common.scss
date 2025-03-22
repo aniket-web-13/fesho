@@ -1,23 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 1200px;
     margin: 0 auto;
 }
-.container-fluid{
+
+.container-fluid {
     width: 100%;
     padding: 2.625rem 0;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.secTbPad{
+.secTbPad {
     padding-top: 3.25rem;
     padding-bottom: 3.25rem;
+}
+
+.feat-sec-pad {
+    padding: 7.5rem 0 5.25rem;
+}
+
+.sec-flex {
+    @include flex(row, center, space-between);
+    gap: 1rem;
+}
+
+.sec-flex-col {
+    @include flex(column, center, center);
+    gap: 3rem;
 }

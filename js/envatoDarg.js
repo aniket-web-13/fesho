@@ -4,13 +4,13 @@
 
 
 let dragBox = document.getElementsByClassName("drag-box");
-console.log(dragBox);
+// console.log(dragBox);
 
 let draggable = document.getElementsByClassName("drag-count");
-console.log(draggable);
+// console.log(draggable);
 
 let item = document.querySelector(".item");
-console.log(item);
+// console.log(item);
 
 let pressed = false;
 let startX;

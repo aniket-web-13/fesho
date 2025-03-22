@@ -1,33 +1,43 @@
-// .wel-count-left{
-//     // height: 500px;   
-// }
-.wel-count-right{
-    @include flex (column,flex-start,center);
+// .wel-count-left {}
+
+.wel-count-right {
+    @include flex (column, flex-start, center);
     gap: 1.75rem;
     padding-left: 3rem;
 }
-.wel-gbg{
+
+.wel-gbg {
     position: absolute;
     z-index: -1;
     bottom: -45px;
     left: -160px;
 }
-.wel-wom{
+
+.wel-wom {
     z-index: 1;
     border-radius: 50%;
 }
-.wel-jar{
+
+.wel-jar {
     position: absolute;
     z-index: 2;
     border-radius: 50%;
     bottom: -55px;
     right: -5px;
 }
+
 // wlecome sec right //
-.wel-tit{
-    @include flex (column,flex-start,center);
+.wel-tit {
+    @include flex (column, flex-start, center);
     gap: 1.5rem;
+
+    h4 {
+        font-size: $h3-font-size;
+        color: $greenBG;
+    }
 }
-.wel-tbf{
-    @include flex (row,center,center)
+
+.wel-tbf {
+    @include flex (row, center, center)
 }
+
