@@ -88,3 +88,23 @@
     }
   }
 }
+
+// about section gallery carousal //
+.abg-container{
+  width: 1540px;
+  margin: 0 auto;
+}
+.ab-drag{
+  overflow: hidden;
+  @include flex(row, center, center);
+  gap: 2rem;
+}
+.ab-drag-img{
+  width: 362px;
+  img{
+    width: 100%;
+  }
+}
+.abg-hov{
+  
+}
