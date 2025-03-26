@@ -41,11 +41,11 @@
   }
 }
 
-.ab-envato{
+.ab-envato {
   background-color: $white;
 }
 
-.dc-po{
+.dc-po {
   top: 100px;
 }
 // use for hr //
@@ -83,28 +83,49 @@
   &:hover {
     .gel-hov {
       scale: 1;
-      opacity: 1; 
+      opacity: 1;
       transform: scale(1);
     }
   }
 }
 
 // about section gallery carousal //
-.abg-container{
+.abg-container {
   width: 1540px;
   margin: 0 auto;
 }
-.ab-drag{
+.ab-drag {
   overflow: hidden;
   @include flex(row, center, center);
   gap: 2rem;
 }
-.ab-drag-img{
+.ab-drag-img {
   width: 362px;
-  img{
+  img {
     width: 100%;
   }
 }
-.abg-hov{
-  
+.overly-hov {
+  position: absolute;
+  top: 0;
+  width: 362px;
+  height: 362px;
+  background-color: $greenBG;
+  z-index: 5;
+  border-radius: $img-br;
+  opacity: 0.8;
+  padding: 1.875rem;
+}
+.ov-top {
+  padding: 2rem 0 0;
+  text-align: right;
+}
+.over-link {
+  width: 50px;
+  height: 50px;
+  background-color: $white;
+  // border-radius: 50%;
+  text-decoration: none;
+  color: $main-btn-hover;
+  opacity: 1;
 }
