@@ -22,17 +22,18 @@ Array.from(navNesParent).forEach((parent, index) => {
     });
 }); */
 
+/* ======================================================================== */
 /* braedcrumb */
 
 function Breadcrumbs(path) {
    const breadcrumbContainer = document.querySelector('.breadcrumb');
-   console.log(breadcrumbContainer);  
+   // console.log(breadcrumbContainer);  
 
    const pathSegments = path.split('/');
-   console.log(pathSegments); 
+   // console.log(pathSegments); 
 
    breadcrumbContainer.innerHTML = pathSegments.map((segment, index) => {
-      console.log(pathSegments);
+      // console.log(pathSegments);
 
       if (index === pathSegments.length - 1) { 
 
@@ -41,12 +42,12 @@ function Breadcrumbs(path) {
       } else {
          const href = pathSegments.slice(0, index + 1).join('/');
 
-         console.log(href, pathSegments.slice(0, index + 1));
+         // console.log(href, pathSegments.slice(0, index + 1));
 
          return `<li><a href="${href}">${segment}</a></li>`;  
       }
    }).join(''); 
 
-   console.log(path);
+   // console.log(path);
 }
 
