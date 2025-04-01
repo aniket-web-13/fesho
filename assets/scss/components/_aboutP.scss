@@ -217,3 +217,38 @@
         }
     }
 }
+
+// Fun Fact section //
+.fun-fac-sec{
+    background-image: url("/assets/media/jpg/funfact-sec-img.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #164333;
+}
+.ff-pad{
+    padding: 6.25rem 0 3.75rem;
+}
+.num-run-count{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.num-run{
+    white-space: nowrap;
+}
+.number-runner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+
+  #number {
+    font-size: $font-size;
+    color: $color;
+    font-weight: bold;
+    display: inline-block;
+    animation: number-runner 3s ease-in-out infinite;
+  }
+}
+

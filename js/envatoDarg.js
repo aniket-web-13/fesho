@@ -1,5 +1,5 @@
 
-// let dragBox = document.getElementsByClassName("drag-box");
+/* let dragBox = document.getElementsByClassName("drag-box");
 // // console.log(dragBox);
 
 // let draggable = document.getElementsByClassName("drag-count");
@@ -50,13 +50,15 @@
 //   draggable[0].style.left = `${x - startX}px`;
 
 //   boundItems();
-// });
+// }); */
 
 let dragBox = document.getElementsByClassName("drag-box")[0];
 let draggable = document.getElementsByClassName("drag-count")[0];
 let pressed = false;
 let startX;
-let x;
+let currentX;
+
+draggable.style.left = '0px';
 
 dragBox.addEventListener("mousedown", (e) => {
     pressed = true;
@@ -65,7 +67,7 @@ dragBox.addEventListener("mousedown", (e) => {
 });
 
 dragBox.addEventListener("mouseenter", () => {
-    dragBox.style.cursor = "grab";
+    if (!pressed) dragBox.style.cursor = "grab";
 });
 
 dragBox.addEventListener("mouseup", () => {
@@ -82,6 +84,7 @@ const boundItems = () => {
     let outer = dragBox.getBoundingClientRect();
     let inner = draggable.getBoundingClientRect();
 
+
     if (parseInt(draggable.style.left) > 0) {
         draggable.style.left = "0px";
     }
@@ -95,13 +98,12 @@ dragBox.addEventListener("mousemove", (e) => {
     if (!pressed) return;
     e.preventDefault();
 
-    x = e.offsetX;
-    draggable.style.left = `${x - startX}px`;
+    currentX = e.offsetX;
+    draggable.style.left = `${currentX - startX}px`;
 
     boundItems();
 });
 
-// Optional: Add touch events for mobile support
 dragBox.addEventListener("touchstart", (e) => {
     pressed = true;
     startX = e.touches[0].clientX - draggable.offsetLeft;
@@ -112,8 +114,8 @@ dragBox.addEventListener("touchmove", (e) => {
     if (!pressed) return;
     e.preventDefault();
 
-    x = e.touches[0].clientX;
-    draggable.style.left = `${x - startX}px`;
+    currentX = e.touches[0].clientX;
+    draggable.style.left = `${currentX - startX}px`;
 
     boundItems();
 });

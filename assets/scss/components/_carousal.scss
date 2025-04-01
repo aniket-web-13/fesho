@@ -97,7 +97,7 @@
 }
 
 // about section gallery carousal //
-.about-wrap {
+.about-wrapc {
   max-width: 1540px;
   margin: 0 auto;
 }
@@ -109,6 +109,10 @@
 .about-carousal {
   white-space: nowrap;
   cursor: pointer;
+  display: grid;
+  grid-template-columns: 362px 362px 362px 362px 362px 362px;
+  overflow: hidden;
+  gap: 1.75rem;
 }
 
 .ab-drag-img:first-child {
@@ -116,20 +120,29 @@
 }
 
 .ab-drag-img {
+  overflow: hidden;
+  position: relative;
   border-radius: $img-br;
-  display: inline-block;
-  margin-left: 1rem;
+  height: 362px;
+  width: 362px;
 
   img {
     height: 362px;
-    width: 100%;
-    object-fit: cover;
+    width: 362px;
+  }
+}
+
+.ab-drag-img :hover{
+  .ov-top{
+    transform: translateY(0);
+  }
+  .ov-info{
+    transform: translateY(0);
   }
 }
 
 
-
-/*.overly-hov {
+.overly-hov {
   position: absolute;
   top: 0;
   width: 362px;
@@ -150,7 +163,7 @@
   text-align: right;
   transform: translateY(-80px);
   transition: all 0.3s ease;
-  transition-delay: 0.6s;
+  transition-delay: 0.3s;
 }
 
 .over-link {
@@ -168,7 +181,7 @@
   opacity: 1;
   transform: translateY(100px);
   transition: all 0.3s ease;
-  transition-delay: 0.6s;
+  transition-delay: 0.3s;
 
   p {
     text-transform: capitalize;
@@ -184,4 +197,4 @@
       font-size: $h4-font-size;
     }
   }
-}*/
+}
