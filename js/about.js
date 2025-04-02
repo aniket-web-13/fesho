@@ -34,20 +34,21 @@
 
 /* Number Runner  */
 
-let currentNumber = 0;  // Start number
-const targetNumber = 100;  // Target number
-const speed = 70;  // Time interval to increase number (milliseconds)
+let currentNumber = 0;
+// Start number
+const targetNumber = 6420;
+// Target number
+const speed = 1;
+// Time interval to increase number (milliseconds)
 const numberElement = document.getElementById("number");
 
-// Function to update the number
 function updateNumber() {
   if (currentNumber <= targetNumber) {
     numberElement.textContent = currentNumber;
     currentNumber++;
   } else {
-    clearInterval(runnerInterval); // Stop the animation when the target is reached
+    clearInterval(runnerInterval); 
   }
 }
 
-// Start the number running (update every 'speed' milliseconds)
 const runnerInterval = setInterval(updateNumber, speed);

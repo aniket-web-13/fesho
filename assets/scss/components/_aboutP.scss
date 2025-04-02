@@ -241,14 +241,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #282c34;
+//   background-color: #282c34;.
+.schoolbell{
+    font-size: 4.375rem;
+}
 
-  #number {
-    font-size: $font-size;
-    color: $color;
+
+}
+
+#number {
+
+    color: $white;
     font-weight: bold;
     display: inline-block;
     animation: number-runner 3s ease-in-out infinite;
   }
-}
-
