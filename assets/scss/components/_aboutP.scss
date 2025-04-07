@@ -203,6 +203,7 @@
 
 .harv-list {
     list-style: none;
+
     li {
         @include flex(row, center, flex-start);
         position: relative;
@@ -211,7 +212,8 @@
         color: $main-btn-hover;
         font-weight: 600;
         margin-bottom: 10px;
-        .fa-circle-right{
+
+        .fa-circle-right {
             padding-right: 1rem;
             color: $warning;
         }
@@ -219,40 +221,66 @@
 }
 
 // Fun Fact section //
-.fun-fac-sec{
+.fun-fac-sec {
     background-image: url("/assets/media/jpg/funfact-sec-img.jpg");
     position: relative;
     background-repeat: no-repeat;
     background-position: center top;
     background-color: #164333;
 }
-.ff-pad{
+
+.ff-pad {
     padding: 6.25rem 0 3.75rem;
 }
-.num-run-count{
+
+.num-run-count {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.num-run{
+
+.num-run {
     white-space: nowrap;
 }
+
 .number-runner-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-//   background-color: #282c34;.
-.schoolbell{
-    font-size: 4.375rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //   background-color: #282c34;.
+    .schoolbell {
+        font-size: 4.375rem;
+    }
+
+    h4 {
+        font-size: $h6-font-size;
+        color: $feat-p;
+    }
 }
 
-
-}
-
-#number {
-
-    color: $white;
-    font-weight: bold;
+.number {
+    color: $yellow;
+    font-weight: 400;
     display: inline-block;
     animation: number-runner 3s ease-in-out infinite;
-  }
+}
+
+// Fun Fact Features //
+.ff-features {
+    background-color: #164333;
+    padding: 1.5rem;
+}
+
+.ff-features::after {
+    background-image: url("/assets/media/png/cat-sec-btm-bg.webp");
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    height: 70px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #000000;
+}
