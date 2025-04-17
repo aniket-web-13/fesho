@@ -1,14 +1,12 @@
-
-
 let navNesParent = document.getElementsByClassName("nav-nes-parent");
 let navNesChild = document.getElementsByClassName("nav-nes-link");
 
 navNesParent[0].addEventListener("mouseover", () => {
-   navNesChild[0].style.display = "block"
-})
+  navNesChild[0].style.display = "block";
+});
 navNesParent[0].addEventListener("mouseleave", () => {
-   navNesChild[0].style.display = "none"
-})
+  navNesChild[0].style.display = "none";
+});
 
 /* let navNesParent = document.getElementsByClassName("nav-nes-parent");
 let navNesChild = document.getElementsByClassName("nav-nes-link");
@@ -26,28 +24,27 @@ Array.from(navNesParent).forEach((parent, index) => {
 /* braedcrumb */
 
 function Breadcrumbs(path) {
-   const breadcrumbContainer = document.querySelector('.breadcrumb');
-   // console.log(breadcrumbContainer);  
+  const breadcrumbContainer = document.querySelector(".breadcrumb");
+  console.log(breadcrumbContainer);
 
-   const pathSegments = path.split('/');
-   // console.log(pathSegments); 
+  const pathSegments = path.split("/");
+  console.log(pathSegments);
 
-   breadcrumbContainer.innerHTML = pathSegments.map((segment, index) => {
+  breadcrumbContainer.innerHTML = pathSegments.map((segment, index) => {
       // console.log(pathSegments);
 
-      if (index === pathSegments.length - 1) { 
-
-         return `<li>${segment.slice(0, 5)}</li>`;  
-
+      if (index === pathSegments.length - 1) {
+        return `<li>${segment.slice(0, 5)}</li>`;
+        
       } else {
-         const href = pathSegments.slice(0, index + 1).join('/');
+        const href = pathSegments.slice(0, index + 1).join("/");
 
-         // console.log(href, pathSegments.slice(0, index + 1));
+        console.log(href, pathSegments.slice(0, index + 1));
 
-         return `<li><a href="${href}">${segment}</a></li>`;  
+        return `<li><a href="${href}">${segment}</a></li>`;
       }
-   }).join(''); 
+    })
+    .join("");
 
-   // console.log(path);
+  console.log(path);
 }
-
