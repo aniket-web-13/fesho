@@ -23,21 +23,22 @@ Array.from(navNesParent).forEach((parent, index) => {
 /* ======================================================================== */
 /* braedcrumb */
 
-function Breadcrumbs(path) {
+/*function Breadcrumbs(path) {
   const breadcrumbContainer = document.querySelector(".breadcrumb");
-  console.log(breadcrumbContainer);
+  // console.log(breadcrumbContainer);
 
   const pathSegments = path.split("/");
-  console.log(pathSegments);
+  // console.log(pathSegments);
 
-  breadcrumbContainer.innerHTML = pathSegments.map((segment, index) => {
+  breadcrumbContainer.innerHTML = pathSegments
+    .map((segment, index) => {
       // console.log(pathSegments);
 
       if (index === pathSegments.length - 1) {
         return `<li>${segment.slice(0, 5)}</li>`;
-        
       } else {
         const href = pathSegments.slice(0, index + 1).join("/");
+        console.log(pathSegments.slice(0, index + 1).join("/"));
 
         console.log(href, pathSegments.slice(0, index + 1));
 
@@ -46,5 +47,38 @@ function Breadcrumbs(path) {
     })
     .join("");
 
-  console.log(path);
+  // console.log(path);
+  // console.log(window.location.pathname);
+}*/
+
+function createBreadcrumb(path) {
+  const breadcrumbContainer = document.querySelector(".breadcrumb");
+  breadcrumbContainer.innerHTML = "";
+  const pathSegments = path.split("/").filter(Boolean);
+
+  pathSegments.pop();
+
+  const homeLi = document.createElement("li");
+  homeLi.innerHTML = `<a href="/">Home</a>`;
+  breadcrumbContainer.appendChild(homeLi);
+  // console.log(homeLi);
+
+  pathSegments.forEach((segment, index) => {
+    const isLast = index === pathSegments.length - 1;
+    console.log(index === pathSegments.length - 1);
+
+    const li = document.createElement("li");
+
+    if (isLast) {
+      li.textContent = segment;
+      console.log(segment);
+    } else {
+      const href = "/" + pathSegments.slice(0, index + 1).join("/");
+      li.innerHTML = `<a href="${href}">${segment}</a>`;
+    }
+
+    breadcrumbContainer.appendChild(li);
+  });
 }
+
+

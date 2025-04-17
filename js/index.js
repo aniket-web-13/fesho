@@ -1,4 +1,4 @@
 /* Breadcrumb funcation host */
-Breadcrumbs(window.location.pathname);
+createBreadcrumb(window.location.pathname);
 
 
