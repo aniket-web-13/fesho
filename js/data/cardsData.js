@@ -126,3 +126,38 @@ newsArtData.map((value) => {
 
   `
 })
+
+
+
+let serviceList = [
+  {
+    src:"/assets/media/png/sl-card-veg.png",
+    title:"Vegetables",
+    para:"When nothing prevents our and makers of natural and organic products to we best be.",
+  },
+  {
+    src:"/assets/media/png/sl-card-berry.png",
+    title:"",
+    para:""
+  },
+   {
+    src:"/assets/media/png/sl-card-dryFrut.png",
+    title:"",
+    para:""
+  },
+   {
+    src:"/assets/media/png/sl-card-dryFrut.png",
+    title:"",
+    para:""
+  },
+   {
+    src:"/assets/media/png/sl-card-berry.png",
+    title:"",
+    para:""
+  },
+   {
+    src:"/assets/media/png/sl-card-veg.png",
+    title:"",
+    para:""
+  },
+]
