@@ -82,3 +82,66 @@ function createBreadcrumb(path) {
 }
 
 
+let serviceList = [
+  {
+    src: "/assets/media/png/sl-card-veg.png",
+    title: "Vegetables",
+    bg: "#E3EEE5"
+  },
+  {
+    src: "/assets/media/png/sl-card-berry.png",
+    title: "Fresh Fruits",
+    bg: "#F0E2E3"
+  },
+  {
+    src: "/assets/media/png/sl-card-dryFrut.png",
+    title: "Dry Fruits",
+    bg: "#F0ECE0"
+  },
+  {
+    src: "/assets/media/png/sl-card-dryFrut.png",
+    title: "Organic Store",
+    bg: "#F0ECE0"
+  },
+  {
+    src: "/assets/media/png/sl-card-berry.png",
+    title: "Dairy Products",
+    bg: "#E3EEE5"
+  },
+  {
+    src: "/assets/media/png/sl-card-veg.png",
+    title: "Dry Fruits",
+    bg: "#F0E2E3"
+  }
+];
+
+let serviceBox = document.getElementById("serviceListBox");
+let dynamicStyles = document.getElementById("dynamicServiceStyles");
+let newContent = '"Updated: "';
+
+serviceList.forEach((item, index) => {
+  const uniqueClass = `sl-card-box-${index}`;
+  serviceBox.innerHTML += `
+    <div class="sl-card-box ${uniqueClass}">
+      <div class="sl-body relative">
+        <div class="sl-text dm">
+          <div class="sl-card-img">
+            <img src="${item.src}" alt="">
+          </div>
+          <h4><a href="#">${item.title}</a></h4>
+          <p>When nothing prevents our and makers of natural and organic products to we best be.</p>
+          <a href="#" class="sl-arr-btn" style="background-color: ${item.bg};">
+            <img class="sl-arr" src="/assets/media/png/long-arrow-pointing-to-the-right.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  dynamicStyles.textContent += `
+    .${uniqueClass} .sl-body::before,
+    .${uniqueClass} .sl-text::before {
+      background: ${item.bg};
+    }
+  `;
+});

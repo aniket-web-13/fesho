@@ -88,20 +88,19 @@ catCardsData.map((value) => {
   `;
 });
 
-
 let nsCardCount = document.getElementById("nsCardCount");
 
 let newsArtData = [
   {
-    src:"./assets/media/jpg/news-home-1.jpg",    
+    src: "./assets/media/jpg/news-home-1.jpg",
   },
   {
-    src:"./assets/media/jpg/news-home-2.jpg",    
+    src: "./assets/media/jpg/news-home-2.jpg",
   },
   {
-    src:"./assets/media/jpg/news-home-3.jpg",    
+    src: "./assets/media/jpg/news-home-3.jpg",
   },
-]
+];
 
 newsArtData.map((value) => {
   nsCardCount.innerHTML += `
@@ -124,40 +123,6 @@ newsArtData.map((value) => {
         </div>
     </div>
 
-  `
-})
+  `;
+});
 
-
-
-let serviceList = [
-  {
-    src:"/assets/media/png/sl-card-veg.png",
-    title:"Vegetables",
-    para:"When nothing prevents our and makers of natural and organic products to we best be.",
-  },
-  {
-    src:"/assets/media/png/sl-card-berry.png",
-    title:"",
-    para:""
-  },
-   {
-    src:"/assets/media/png/sl-card-dryFrut.png",
-    title:"",
-    para:""
-  },
-   {
-    src:"/assets/media/png/sl-card-dryFrut.png",
-    title:"",
-    para:""
-  },
-   {
-    src:"/assets/media/png/sl-card-berry.png",
-    title:"",
-    para:""
-  },
-   {
-    src:"/assets/media/png/sl-card-veg.png",
-    title:"",
-    para:""
-  },
-]
