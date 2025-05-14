@@ -81,38 +81,37 @@ function createBreadcrumb(path) {
   });
 }
 
-
 let serviceList = [
   {
     src: "/assets/media/png/sl-card-veg.png",
     title: "Vegetables",
-    bg: "#E3EEE5"
+    bg: "#E3EEE5",
   },
   {
     src: "/assets/media/png/sl-card-berry.png",
     title: "Fresh Fruits",
-    bg: "#F0E2E3"
+    bg: "#F0E2E3",
   },
   {
     src: "/assets/media/png/sl-card-dryFrut.png",
     title: "Dry Fruits",
-    bg: "#F0ECE0"
+    bg: "#F0ECE0",
   },
   {
     src: "/assets/media/png/sl-card-dryFrut.png",
     title: "Organic Store",
-    bg: "#F0ECE0"
+    bg: "#F0ECE0",
   },
   {
     src: "/assets/media/png/sl-card-berry.png",
     title: "Dairy Products",
-    bg: "#E3EEE5"
+    bg: "#E3EEE5",
   },
   {
     src: "/assets/media/png/sl-card-veg.png",
     title: "Dry Fruits",
-    bg: "#F0E2E3"
-  }
+    bg: "#F0E2E3",
+  },
 ];
 
 let serviceBox = document.getElementById("serviceListBox");

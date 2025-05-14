@@ -1,3 +1,4 @@
+// service list css
 .service-list-cont {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -37,20 +38,20 @@
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 10px 60px rgba(0, 0, 0, 0.07);
-    h4{
-        font-size: $h4-font-size;
-        margin: 0.75rem 0 0.938rem;        
-        a{
-            text-decoration: none;
-            color: $main-btn-hover;
-        }
+    h4 {
+      font-size: $h4-font-size;
+      margin: 0.75rem 0 0.938rem;
+      a {
+        text-decoration: none;
+        color: $main-btn-hover;
+      }
     }
-    &:hover{
-        .sl-card-img {
-            img{
-                scale: 0.9;
-            }
+    &:hover {
+      .sl-card-img {
+        img {
+          scale: 0.9;
         }
+      }
     }
   }
   .sl-text::before {
@@ -95,13 +96,13 @@
       width: 18px;
       scale: 1;
     }
-    &:hover{
-        .sl-arr{
-            transform: rotate(270deg);
-        }
+    &:hover {
+      .sl-arr {
+        transform: rotate(270deg);
+      }
     }
   }
-  .sl-arr{
+  .sl-arr {
     transform: rotate(0);
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
@@ -131,3 +132,103 @@
   height: 180px;
   border-radius: 50%;
 }
+
+// ===========================--------------------=================================== //
+
+// service detail css
+
+.sd-pad {
+  padding: 7.5rem 0.75rem;
+}
+.service-detail-count {
+  width: 100%;
+  @include flex(row, center, space-between);
+}
+.s-detail-left {
+  padding: 0 0.75rem;
+  width: 33%;
+}
+.s-detail-right {
+  padding: 0 0.75rem;
+  width: 67%;
+}
+
+// services detail left count
+// 1
+.all-services-box {
+  width: 100%;
+  padding: 1.875rem 2.188rem 1.563rem;
+  background-color: #f5f3eb;
+  border-radius: $img-br;
+  margin-bottom: 1.875rem;
+  h3 {
+    font-size: $h5-font-size;
+    color: $main-btn-hover;
+    margin: 1rem 0;
+    padding-left: 1.375rem;
+  }
+  ul {
+    li {
+      list-style: none;
+      padding: 1.25rem 1.375rem;
+      transition: all 0.5s ease;
+      // transform: rotateX(90deg);
+      a {
+        text-decoration: none;
+        font-size: $h6-font-size;
+        color: #003c38;
+        @include flex(row, center, space-between);
+        .fa-chevron-right {
+          font-size: 0.975rem;
+        }
+      }
+      &:hover {
+        background-color: #ffffff;
+        border-radius: $img-br;
+        // transform: rotateX(90deg);
+        .fa-chevron-right {
+          color: $greenBG;
+        }
+      }
+    }
+  }
+}
+// 2
+fadeInUp animation {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.sap-count {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  
+  .sap-bg {
+    position: relative;
+    display: block;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 3.125rem 0px 2.75rem;
+    z-index: 1;
+    background-image: url("/assets/media/jpg/service-detail-orange.jpg");
+    visibility: visible;
+    animation-delay: 0.3s;
+    animation-name: fadeInUp;
+    @include flex(column, center, space-between);
+  }
+  .tele-icon{
+    background-color: $yellow;
+    border-radius: 50%;
+    padding: 1.25rem 1.375rem;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    &:hover{
+      background-color: $main-btn-hover;
+      color: #ffffff;
+    }
+  }
+}
+
