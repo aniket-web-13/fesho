@@ -1,5 +1,6 @@
 .main-btn {
   @include mainBtnC ($yellow,$main-btn-hover,$main-btn-hover,$yellow);
+  transition: all 0.5s ease;
 }
 .cards-btn{
   @include mainBtnC ($white,$main-btn-hover,$green,$white);
