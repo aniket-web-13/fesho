@@ -375,12 +375,45 @@ fadeInUp animation {
   }
 
   p {
-    margin: 1.25rem 0 1.875rem;
+    margin: 1.125rem 0 1.75rem;
     line-height: 28px;
+    font-size: $normal-fs;
   }
 
   .sdr-h2 {
     font-size: $h3-font-size;
     color: $main-btn-hover;
+
+  }
+
+  .sd-clearfix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2.125rem;
+
+    .single-item {
+      padding: 1.325rem 1.875rem 1.325rem 2.313rem;
+      border: 1px solid #e1e8e4;
+      @include flex(row, center, flex-start);
+      gap: 1.25rem;
+      transition: all 0.5s ease;
+      text-transform: uppercase;
+      .fa-circle-check{
+        color: $greenBG;
+        font-size: 1.125rem;
+        transition: all 0.5s ease;
+      }
+      h6{
+        color: $main-btn-hover;
+        font-size: $normal-fs;
+      }
+      &:hover{
+        background-color: $yellow;
+        .fa-circle-check{
+          color: $main-btn-hover;
+        }
+      }
+    }
   }
 }
