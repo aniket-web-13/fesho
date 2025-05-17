@@ -1,3 +1,86 @@
-.faq-count{
+.faq-count {
     width: 100%;
+}
+
+.faq-main-count {
+    width: 100%;
+    @include flex(row, flex-start, space-between);
+    // position: relative;
+}
+
+.faq-heading {
+    width: 100%;
+    height: fit-content;
+    @include flex(column, flex-start, space-between);
+    gap: 1rem;
+    position: sticky;
+    top: 20px;
+}
+
+.faq-right {
+    width: 100%;
+}
+
+.question-count {
+    width: 100%;
+    @include flex(column, center, space-between);
+    gap: 0.25rem;
+}
+
+.faq-quest {
+    width: 100%;
+    font-size: $h5-font-size;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    border-bottom: 1px solid #fff;
+    @include flex(column, flex-start, space-between);
+    // gap: 1rem;
+    // border: 1px solid $yellow;
+    position: relative;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0.75rem;
+}
+
+.faq-q-top {
+    width: 100%;
+    height: fit-content;
+    @include flex(row, center, space-between);
+    cursor: pointer;
+        padding: 1.535rem 1.875rem;
+
+    h2 {
+        font-size: $h5-font-size;
+    }
+}
+
+.faq-icon {
+    width: 10%;
+    @include flex(row, center, center);
+    font-size: 1.25rem;
+    font-weight: 100;
+    .icon{
+        color: $greenBG;
+    }
+}
+
+.faq-bottom {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    text-align: justify;
+    line-height: 1.75rem;
+    padding-right: 3rem;
+    transition: all 0.5s;
+    padding: 0 1.875rem;
+    p {
+        font-size: $normal-fs;
+    }
+}
+
+.active-faq {
+    background-color: $yellow;
 }

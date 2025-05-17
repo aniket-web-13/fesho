@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Optional: Log sdClearfix
   let sdClearfix = document.getElementById("sdClearfix");
-  console.log("sdClearfix:", sdClearfix);
+  // console.log("sdClearfix:", sdClearfix);
 
   const serviceItems = [
   {
