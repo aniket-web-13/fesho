@@ -399,18 +399,22 @@ fadeInUp animation {
       gap: 1.25rem;
       transition: all 0.5s ease;
       text-transform: uppercase;
-      .fa-circle-check{
+
+      .fa-circle-check {
         color: $greenBG;
         font-size: 1.125rem;
         transition: all 0.5s ease;
       }
-      h6{
+
+      h6 {
         color: $main-btn-hover;
         font-size: $normal-fs;
       }
-      &:hover{
+
+      &:hover {
         background-color: $yellow;
-        .fa-circle-check{
+
+        .fa-circle-check {
           color: $main-btn-hover;
         }
       }
