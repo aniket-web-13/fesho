@@ -1,9 +1,105 @@
 .contact-form {
     padding: 0 0.75rem;
-    width: 59%;
+    width: 58.5%;
 }
 
 .contact-info {
     padding: 0 0.75rem;
-    width: 41%;
+    width: 41.5%;
+
+    ul {
+        position: relative;
+        display: block;
+        margin-top: 41px;
+        list-style: none;
+
+        li {
+            @include flex(row, center, flex-start);
+            gap: 1rem;
+            margin-bottom: 1.125rem;
+        }
+    }
+
+    h6 {
+        font-size: $h6-font-size;
+        font-weight: 700;
+        color: $main-btn-hover;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.c-icon {
+    padding: 1.5rem 1.75rem;
+    background-color: $greenBG;
+    color: $white;
+    font-size: $h4-font-size;
+}
+.c-text{
+    font-size: $h6-font-size;
+    a{
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+
+.contact-form-title {
+    margin-bottom: 1.5rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.125rem;
+    max-width: 720px;
+}
+
+p {
+    line-height: $lh-5;
+}
+
+.form-grid input,
+.form-grid textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.938rem 1.875rem;
+    background-color: #F4F5F8;
+    border-radius: 0.25rem;
+    border: none;
+    border: 2px solid #F4F5F8;
+}
+
+.form-grid input:focus,
+.form-grid textarea:focus {
+    outline: none;
+    border: 2px solid $greenBG;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 3px rgba(74, 226, 74, 0.6);
+}
+
+.form-grid textarea {
+    grid-column: span 2;
+    min-height: calc(1.5em + (.75rem + 2px));
+    height: 183px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.938rem 1.875rem;
+    border-radius: .25rem;
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-btn-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.25rem;
+
+    .main-btn {
+        padding: 0.9875rem 2.25rem;
+    }
 }

@@ -130,8 +130,60 @@
             <div class="sd-pad">
                 <div class="container">
                     <div class="service-detail-count">
-                        <div class="contact-form">vdsfs</div>
-                        <div class="contact-info">vdsfs</div>
+                        <div class="contact-form">
+                            <div class="contact-form-title">
+                                <p class="sch-title">Send us email</p>
+                                <h2 class="wel-h2">Feel free to write</h2>
+                            </div>
+                            <form class="form-grid" id="contactForm">
+                                <!-- First Row -->
+                                <input type="text" placeholder="First Name" name="firstName" required />
+                                <input type="text" placeholder="Last Name" name="lastName" required />
+                                <!-- Second Row -->
+                                <input type="email" placeholder="Email" name="email" required />
+                                <input type="tel" placeholder="Phone Number" name="phone" required />
+                                <!-- Third Row -->
+                                <textarea placeholder="Your Message" name="message" required></textarea>
+                                <div class="form-btn-row pop">
+                                    <button type="submit" class="main-btn">Send message</button>
+                                    <button type="reset" class="main-btn">Reset</button>
+                                </div>
+                                <!-- Message box -->
+                                <div id="form-message" style="margin-top: 10px;"></div>
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-form-title">
+                                <p class="sch-title">Need any help?</p>
+                                <h2 class="wel-h2">Get in touch with us</h2>
+                            </div>
+                            <p>Lorem ipsum is simply free text available dolor sit amet, consectetur notted adipisicing
+                                elit sed do eiusmod tempor incididunt simply free labore dolore magna.
+                            </p>
+                            <ul class="dm">
+                                <li>
+                                    <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="c-text">
+                                        <h6>Have any question?</h6>
+                                        <a href="tel:980089850">980089850</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="c-text">
+                                        <h6>Write email</h6>
+                                        <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-icon"><i class="fa-regular fa-paper-plane"></i></div>
+                                    <div class="c-text">
+                                        <h6>Visit anytime</h6>
+                                        <span>66 broklyn golden street. New York</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,6 +197,7 @@
         integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/data/cardsData.js"></script>
+    <script src="/js/contactForm.js"></script>
     <script src="/js/breadcrumb.js"></script>
     <script src="/js/faq.js"></script>
     <script src="/js/footer.js"></script>
