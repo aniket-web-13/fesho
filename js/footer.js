@@ -7,7 +7,7 @@ footer.innerHTML += `
         <div class="container">
             <div class="foot-grid">
                 <div class="f-info">
-                    <img src="./assets/media/png/foot-logo.png" alt="">
+                    <img src="/assets/media/png/foot-logo.png" alt="">
                     <p class="pop">We're providing every day fresh and quality products for you.</p>
                     <div class="foot-media">
                         <a href="#" class="circle-btn"><i class="fa-brands fa-x-twitter"></i></a>
@@ -20,11 +20,11 @@ footer.innerHTML += `
                     <h5 class="dm fl-title">Explore</h5>
                     <div class="foot-links">
                         <ul class="pop">
-                            <li><a href="#">About Company</a></li>
+                            <li><a href="/pages/about/about.html">About Company</a></li>
                             <li><a href="#">Our Services</a></li>
                             <li><a href="#">Become a Seller</a></li>
                             <li><a href="#">New Products</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="/contact/contact.html">Contact</a></li>
                         </ul>
                     </div>                                
                 </div>

@@ -2,20 +2,25 @@
 .nav-green {
   background-color: $greenBG;
 }
+
 .nav-top {
   @include flex(row, center, space-between);
 }
+
 .nt-left {
   padding: 0.5rem;
 }
+
 .nt-left ul {
   display: flex;
   gap: 2.5rem;
 }
+
 .nt-left ul li {
   list-style: none;
   display: flex;
   gap: 0.5rem;
+
   a {
     text-decoration: none;
     color: $white;
@@ -23,6 +28,7 @@
     gap: 0.5rem;
     font-size: 0.875rem;
   }
+
   address {
     color: $white;
     display: flex;
@@ -30,9 +36,11 @@
     font-style: normal;
   }
 }
+
 .en-ah {
   height: 50px;
 }
+
 // icon yellow color //
 .icon {
   color: $warning;
@@ -44,11 +52,13 @@
   display: flex;
   gap: 1rem;
 }
+
 .nt-right ul li {
   a {
     color: $white;
   }
 }
+
 // main Nav bar //
 .nav-main {
   @include flex(row, center, space-between);
@@ -58,13 +68,16 @@
   @include flex(row, center, space-between);
   gap: 10rem;
 }
+
 .navigation-link ul {
   @include flex(row, center, space-between);
   list-style: none;
   gap: 3rem;
+
   li {
     text-transform: capitalize;
     padding: 2.75rem 0 2.25rem;
+
     a {
       text-decoration: none;
       color: $dark;
@@ -76,18 +89,22 @@
   font-size: 0.75rem;
   padding: 0 0.25rem;
 }
+
 .nav-func ul {
   @include flex(row, center, space-between);
   list-style: none;
   gap: 2rem;
+
   li {
     text-transform: capitalize;
+
     a {
       text-decoration: none;
       color: $dark;
     }
   }
 }
+
 // nested nav link //
 // .nav-m{
 //   a {
@@ -95,10 +112,12 @@
 //     color: $dark;
 //   }
 // }
+
 .nav-nes-parent {
   position: relative;
   transition: all 300ms ease;
 }
+
 .nav-nes-link {
   display: none;
   z-index: 10;
@@ -108,29 +127,117 @@
   top: 105px;
   transition: all 300ms ease;
   z-index: 20;
+
   ul {
     @include flex(column, flex-start, space-between);
-    padding: 0 0.75rem;
     gap: 0;
     width: 220px;
+
     li {
-      width: 100%;
+      width: 180px;
       padding: 0.75rem;
-      border-bottom: 1px solid $gray;
-      a {
-        &:hover {
+      margin: 0 1.25rem;
+      border-bottom: 1px solid #E5E5E5;
+
+      &:hover {
+        a {
           color: $green;
         }
       }
     }
   }
 }
+
+// service link nested links in nav
+
+.ser-nes {
+  transition: all 300ms ease;
+  position: relative;
+  @include flex(row, center, space-between);
+
+  &:hover {
+    a {
+      color: $green;
+    }
+
+    .fa-chevron-right {
+      color: $green;
+    }
+
+    .service-nav-nes {
+      display: block;
+    }
+  }
+}
+
+.nav-nes-link ul li:last-child {
+  border: none;
+}
+
+.fa-chevron-right {
+  font-size: 0.65rem;
+  color: $text-color;
+}
+
+.service-nav-nes {
+  transition: all 300ms ease;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  right: -224px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    a {
+      color: $green;
+    }
+  }
+}
+
+
 // ham btn //
+
+#navRight {
+  @include flex(row, center, space-between);
+
+  @media (max-width: 768px) {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: $white;
+    padding: 1rem;
+
+    &.open {
+      display: flex;
+    }
+  }
+}
+
 .hamBtn {
   display: none;
-  border: none;
-  font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: $dark;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // .ham-main-box{
 //   background-color: $white;

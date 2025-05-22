@@ -1,55 +1,85 @@
-let navNesParent = document.getElementsByClassName("nav-nes-parent");
-let navNesChild = document.getElementsByClassName("nav-nes-link");
+// let navNesParent = document.getElementsByClassName("nav-nes-parent");
+// let navNesChild = document.getElementsByClassName("nav-nes-link");
 
-navNesParent[0].addEventListener("mouseover", () => {
-  navNesChild[0].style.display = "block";
-});
-navNesParent[0].addEventListener("mouseleave", () => {
-  navNesChild[0].style.display = "none";
-});
+// navNesParent[0].addEventListener("mouseover", () => {
+//   navNesChild[0].style.display = "block";
+// });
+// navNesParent[0].addEventListener("mouseleave", () => {
+//   navNesChild[0].style.display = "none";
+// });
 
-/* let navNesParent = document.getElementsByClassName("nav-nes-parent");
-let navNesChild = document.getElementsByClassName("nav-nes-link");
+// Handle main nav dropdowns (e.g. "pages")
+const navNesParents = document.querySelectorAll(".nav-nes-parent");
 
-Array.from(navNesParent).forEach((parent, index) => {
+navNesParents.forEach(parent => {
+  const dropdown = parent.querySelector(".nav-nes-link");
+
+  if (dropdown) {
     parent.addEventListener("mouseover", () => {
-        navNesChild[index].style.display = "block";
+      dropdown.style.display = "block";
     });
     parent.addEventListener("mouseleave", () => {
-        navNesChild[index].style.display = "none";
+      dropdown.style.display = "none";
     });
-}); */
+  }
+});
 
-/* ======================================================================== */
-/* braedcrumb */
 
-/*function Breadcrumbs(path) {
-  const breadcrumbContainer = document.querySelector(".breadcrumb");
-  // console.log(breadcrumbContainer);
+// ham btn
+const isMobile = () => window.innerWidth <= 768; // or any mobile breakpoint
 
-  const pathSegments = path.split("/");
-  // console.log(pathSegments);
+// Toggle submenus on click for mobile
+document.querySelectorAll(".nav-nes-parent").forEach((parent) => {
+  const trigger = parent.querySelector("a, .nav-m");
+  const dropdown = parent.querySelector(".nav-nes-link");
 
-  breadcrumbContainer.innerHTML = pathSegments
-    .map((segment, index) => {
-      // console.log(pathSegments);
+  if (!trigger || !dropdown) return;
 
-      if (index === pathSegments.length - 1) {
-        return `<li>${segment.slice(0, 5)}</li>`;
-      } else {
-        const href = pathSegments.slice(0, index + 1).join("/");
-        console.log(pathSegments.slice(0, index + 1).join("/"));
+  // Desktop: Hover
+  parent.addEventListener("mouseenter", () => {
+    if (!isMobile()) dropdown.style.display = "block";
+  });
+  parent.addEventListener("mouseleave", () => {
+    if (!isMobile()) dropdown.style.display = "none";
+  });
 
-        console.log(href, pathSegments.slice(0, index + 1));
+  // Mobile: Click
+  trigger.addEventListener("click", (e) => {
+    if (isMobile()) {
+      e.preventDefault();
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+  });
+});
 
-        return `<li><a href="${href}">${segment}</a></li>`;
-      }
-    })
-    .join("");
+// Toggle nested "services" submenu
+const serviceNavParent = document.getElementById("serNes");
+const serviceDropdown = serviceNavParent?.querySelector(".service-nav-nes");
 
-  // console.log(path);
-  // console.log(window.location.pathname);
-}*/
+if (serviceNavParent && serviceDropdown) {
+  // Desktop hover
+  serviceNavParent.addEventListener("mouseenter", () => {
+    if (!isMobile()) serviceDropdown.style.display = "block";
+  });
+  serviceNavParent.addEventListener("mouseleave", () => {
+    if (!isMobile()) serviceDropdown.style.display = "none";
+  });
+
+  // Mobile click
+  serviceNavParent.querySelector("a").addEventListener("click", (e) => {
+    if (isMobile()) {
+      e.preventDefault();
+      serviceDropdown.style.display = serviceDropdown.style.display === "block" ? "none" : "block";
+    }
+  });
+}
+
+const hamBtn = document.querySelector(".hamBtn");
+const navRight = document.getElementById("navRight");
+
+hamBtn.addEventListener("click", () => {
+  navRight.classList.toggle("open");
+});
 
 
 
