@@ -2,7 +2,7 @@
   height: 800px;
 }
 .cat-bg-left {
-  background-image: url("/assets/media/png/pattern-left-sec-bg.webp");
+  background-image: url("../assets/media/png/pattern-left-sec-bg.webp");
   position: absolute;
   top: -140px;
   width: 100%;
@@ -21,7 +21,7 @@
   height: 893px;
   width: 575px;
   content: "";
-  background-image: url("/assets/media/png/shape-right-sec-bg.webp");
+  background-image: url("../assets/media/png/shape-right-sec-bg.webp");
   background-repeat: no-repeat;
 }
 .sec-flex-col div {
@@ -105,7 +105,7 @@
 }
 
 .cat-btm-bg {
-  background-image: url("/assets/media/png/cat-sec-btm-bg.webp");
+  background-image: url("../assets/media/png/cat-sec-btm-bg.webp");
   background-repeat: no-repeat;
   height: 77px;
   width: 100%;

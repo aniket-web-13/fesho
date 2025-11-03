@@ -2,7 +2,7 @@
   background-color: $bg-color;
 }
 .bg-img-top {
-  background-image: url("/assets/media/png/pattern-sec-top-bg.png");
+  background-image: url("../assets/media/png/pattern-sec-top-bg.png");
   background-repeat: no-repeat;
   height: 100px;
   background-size: cover;
@@ -10,13 +10,13 @@
   top: 2px;
 }
 .bg-img-main {
-  background-image: url("/assets/media/jpg/header-bg.jpg");
+  background-image: url("../assets/media/jpg/header-bg.jpg");
   background-repeat: no-repeat;
   // height: 730px;
   background-size: cover;
 }
 .bg-img-btm {
-  background-image: url("/assets/media/png/pattern-bg-bottom.webp");
+  background-image: url("../assets/media/png/pattern-bg-bottom.webp");
   background-repeat: no-repeat;
   height: 100px;
   background-size: cover;
