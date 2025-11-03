@@ -1,18 +1,18 @@
 let featData = [
     {
-        src:"/assets/media/jpg/banana.jpg",
+        src:"./assets/media/jpg/banana.jpg",
         title:"Bananas",
     },
     {
-        src:"/assets/media/jpg/potato.jpg",
+        src:"./assets/media/jpg/potato.jpg",
         title:"Potatos",
     },
     {
-        src:"/assets/media/jpg/apple.jpg",
+        src:"./assets/media/jpg/apple.jpg",
         title:"Apples",
     },
     {
-        src:"/assets/media/jpg/lettus.jpg",
+        src:"./assets/media/jpg/lettus.jpg",
         title:"Lettus",
     },
 ]
