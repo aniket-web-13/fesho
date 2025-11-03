@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       src: "./assets/media/png/cards-sec-3.webp",
-      title: "Organic Pure Natural Products",
+      title: "Pure Natural Products",
       bgColor: "#164333",
       color: "#ffff",
     },

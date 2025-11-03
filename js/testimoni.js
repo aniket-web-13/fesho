@@ -1,5 +1,5 @@
 let testimoniMainBox = document.getElementById("testimoniMainBox");
-// console.log(testimoniMainBox);
+console.log(testimoniMainBox);
 
 let clientData = [
   {

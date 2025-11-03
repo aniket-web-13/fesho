@@ -5,7 +5,6 @@
 //   let now = new Date().getTime();
 //   // console.log("today time :", now);
 //   let timeRemaining = day - now;
-//   // console.log("remaining time :", timeRemaining);
 
 //   let date = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
 //   // console.log(date);
@@ -21,7 +20,7 @@
 //   let ofDate = (document.getElementById("ofDate").innerHTML = date
 //     .toString()
 //     .padStart(2, 0));
-//   console.log(ofDate);
+// //   console.log(ofDate);
 
 //   let ofHour = (document.getElementById("ofHour").innerHTML = hours
 //     .toString()

@@ -1,8 +1,12 @@
 @media (max-width: 1200px) {
   .container {
-    width: 1144px;
+    width: 1185px !important;
   }
   .nav-btn{
     display: none;
+  }
+  // header
+  .head-circles{
+    right: 5px !important;
   }
 }
